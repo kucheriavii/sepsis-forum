@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR">
+    <title>Sepsis</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/template_styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+    -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/common.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-block"><a class="logotype" href="#"></a><a class="pacient" href="#">Пациентам</a>
+            <div class="specialist-nav"><a class="close-btn"></a><a class="specialist" href="#" data-link="1">Специалистам</a></div>
+            <div class="search-nav"><a class="close-btn"></a><a class="search" href="#" data-link="2"></a></div>
+            <div class="language-nav"><a class="close-btn"></a><a class="language" href="#" data-link="3">Rus</a></div>
+          </div>
+          <div class="authorization-block">
+            <div class="login-nav"><a class="close-btn"></a><a class="login" href="#" data-link="4">Вход</a></div>
+            <div class="registration-nav"><a class="close-btn"></a><a class="registration" href="#" data-link="5">Регистрация</a></div>
+          </div>
+        </nav>
+      </div>
+      <div class="header-popup_wrap">
+        <div class="container">
+          <div class="popup-block specialist-block_wrap" data-block="1">
+            <div class="left-side">
+              <div class="nav-block_wrap">
+                <div class="nav-row">
+                  <div class="top-part">
+                    <div class="name">Сепсис Форум</div>
+                    <div class="line"></div>
+                  </div>
+                  <div class="middle-part">
+                    <ul>
+                      <li><a href="#">О нас</a></li>
+                      <li><a href="#">Мероприятия</a></li>
+                      <li><a href="#">Эксперты</a></li>
+                      <li><a href="#">Партнёры</a></li>
+                      <li><a href="#">Вакансии</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nav-row">
+                  <div class="top-part">
+                    <div class="name">Библиотека</div>
+                    <div class="line"></div>
+                  </div>
+                  <div class="middle-part">
+                    <ul>
+                      <li><a href="#">Статьи</a></li>
+                      <li><a href="#">Случаи из практики</a></li>
+                      <li><a href="#">Видео</a></li>
+                      <li><a href="#">Архив документов</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nav-row">
+                  <div class="top-part">
+                    <div class="name">Консилиум</div>
+                    <div class="line"></div>
+                  </div>
+                  <div class="middle-part">
+                    <ul>
+                      <li><a href="#">Вопросы и ответы</a></li>
+                      <li><a href="#">Опросы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nav-row">
+                  <div class="top-part">
+                    <div class="name">Обучение</div>
+                    <div class="line"></div>
+                  </div>
+                  <div class="middle-part">
+                    <ul>
+                      <li><a href="#">Вебинары</a></li>
+                      <li><a href="#">Курсы</a></li>
+                      <li><a href="#">Тесты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-side">
+              <h2>
+                 Материалы <br>и сервисы для<br>специалистов</h2>
+            </div>
+          </div>
+          <div class="popup-block search-block_wrap" data-block="2">
+            <div class="left-side">
+              <div class="search-block">
+                <input type="text" name="search" placeholder="Введите, что хотите найти. Например, видео с Вишневским">
+              </div>
+              <div class="search-result_wrap">
+                <div class="result-block">
+                  <div class="title">Нашли 110 совпадения</div>
+                  <ul>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li class="profile"><a href="#">
+                        <div class="name">Профиль</div>
+                        <div class="disc">Александр Васильевич Вишне́вский</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="right-side">
+              <h2>
+                 Поиск<br>на сайте</h2>
+            </div>
+          </div>
+          <div class="popup-block language-block_wrap" data-block="3"></div>
+          <div class="popup-block login-block_wrap" data-block="4">
+            <div class="left-side">
+              <h2>
+                 Вход для<br>специалистов</h2>
+            </div>
+            <div class="right-side">
+              <h3>Для того, чтобы получить доступ ко всем материалам, вам необходимо авторизоваться.</h3>
+              <form class="form-send" action="#">
+                <div class="form-field">
+                  <div class="error-message"><span>Электронная почта — чтобы продолжить, заполните</span><span>Например, mail@mail.ru</span></div><span class="placeholder">Электронная почта</span>
+                  <input class="isend checkMail" type="text" name="email">
+                </div>
+                <div class="form-field">
+                  <div class="error-message"><span>Пароль — чтобы продолжить, заполните</span><span>Например, любая комбинация 7 цифр</span></div><span class="placeholder">Пароль</span>
+                  <input class="isend password" type="password" name="password">
+                </div>
+                <div class="check-field">
+                  <input type="checkbox" id="remember" name="remember">
+                  <label for="remember">Запомнить меня на этом компьютере.</label>
+                </div>
+                <div class="form-btn">
+                  <input class="send-btn" type="submit" value="Войти">
+                  <div class="info">
+                    <p>Забыли пароль? <a class="restore-btn" href="#">Восстановить</a></p>
+                  </div>
+                </div>
+                <div class="form-info">
+                  <p>
+                     Впервые на сайте и хотите получить доступ
+                    к материалам? <a class="reg-btn" href="#">Зарегистрируйтесь </a>или <a href="#">поcмотрите информацию для пациентов</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="popup-block registration-block_wrap" data-block="5">
+            <div class="left-side">
+              <h2>
+                 Регистрация<br>для специалистов</h2>
+            </div>
+            <div class="right-side">
+              <div class="nav-block_wrap">
+                <ul class="nav-list">
+                  <li data-step="1"><a href="#">1</a></li>
+                  <li data-step="2"><a href="#">2</a></li>
+                  <li data-step="3"><a href="#">3</a></li>
+                </ul>
+              </div>
+              <div class="content-block_wrap">
+                <form class="form-send" action="#">
+                  <div class="step-block first-step_wrap visible" data-blocks="1">
+                    <h3>Давайте познакомимся</h3>
+                    <div class="block-field_wrap">
+                      <div class="form-field">
+                        <div class="error-message"><span>Фамилия — чтобы продолжить, заполните</span><span>Например, Пирогов</span></div><span class="placeholder">Фамилия</span>
+                        <input class="isend" type="text" name="firstname">
+                      </div>
+                      <div class="form-field">
+                        <div class="error-message"><span>Имя — чтобы продолжить, заполните</span><span>Например, Николай</span></div><span class="placeholder">Имя</span>
+                        <input class="isend" type="text" name="secondname">
+                      </div>
+                      <div class="form-field">
+                        <div class="error-message"><span>Отчество — чтобы продолжить, заполните</span><span>Например, Николаевич</span></div><span class="placeholder">Отчество</span>
+                        <input class="isend" type="text" name="lastname">
+                      </div>
+                      <div class="check-field">
+                        <input class="isend" type="checkbox" id="education" name="education">
+                        <label for="education">Я являюсь специалистом c высшим медицинским образованием</label>
+                      </div>
+                      <div class="form-btn">
+                        <input class="step-btn" type="submit" value="Продолжить" data-move="1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step-block second-step_wrap" data-blocks="2">
+                    <h3>Где работаете</h3>
+                    <div class="block-field_wrap">
+                      <div class="form-field">
+                        <div class="error-message"><span>Город — чтобы продолжить, заполните</span><span>Например, Москва</span></div><span class="placeholder">Город</span>
+                        <input class="isend" type="text" name="city">
+                      </div>
+                      <div class="form-field">
+                        <div class="error-message"><span>Место работы — чтобы продолжить, заполните</span><span>Например, госпитель Вишневского</span></div><span class="placeholder">Место работы</span>
+                        <input class="isend search-input" type="text" name="place">
+                        <div class="place-result_wrap">
+                          <div class="result-block">
+                            <div class="title">Нашли 110 меси</div>
+                            <ul>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                            </ul>
+                            <div class="more-place_wrap">
+                              <div class="title">Не нашли свое место работы в списке? Введите название в поле ниже и нажмите «Ввод» на клавиатуре:</div>
+                              <div class="form-field"><span class="placeholder">Например, университетская клиническая больница №1 Первого МГМУ им. И.М. Сеченова и еще одна строчка</span>
+                                <textarea type="text" name="newPlace"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-field">
+                        <div class="error-message"><span>Контактный телефон — чтобы продолжить, заполните</span><span>Например, +7 987 654-32-10</span></div><span class="placeholder">Контактный телефон</span>
+                        <input class="isend phone" type="text" name="phone">
+                      </div>
+                      <div class="form-btn">
+                        <input class="step-btn" type="submit" value="Продолжить" data-move="2">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step-block third-step_wrap" data-blocks="3">
+                    <h3>Создание профиля</h3>
+                    <div class="block-field_wrap">
+                      <div class="form-field">
+                        <div class="error-message"><span>Электронная почта — чтобы продолжить, заполните</span><span>Например, mail@mail.ru</span></div><span class="placeholder">Электронная почта</span>
+                        <input class="isend checkMail" type="text" name="email">
+                      </div>
+                      <div class="form-field">
+                        <div class="error-message"><span>Пароль — чтобы продолжить, заполните</span><span>Например, любая комбинация 7 цифр</span></div><span class="placeholder">Пароль</span>
+                        <input class="isend password" type="password" name="password">
+                      </div>
+                      <div class="check-field">
+                        <input class="isend" type="checkbox" id="media" name="media">
+                        <label for="media">Подписаться на информационную рассылку. Позже можно будет изменить параметры уведомлений</label>
+                      </div>
+                      <div class="check-field">
+                        <input class="isend" type="checkbox" id="agree" name="agree">
+                        <label for="agree">Подтверждаю <a href="#">УСЛОВИЯ САЙТА</a></label>
+                      </div>
+                      <div class="form-btn">
+                        <input class="send-btn" type="submit" value="Зарегистрироваться" data-move="3">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step-block fourth-step_wrap">
+                    <h3>На ваш адрес электронной почты отправлено письмо для подтверждения регистрации</h3>
+                    <div class="advantages-block">
+                      <h3>Получите преимущества</h3>
+                      <p>Вы можете вступить в Ассоциацию «Сепсис Форум». Это позволит вам получать доступ к специальным мероприятиям, консультацию с лучшими узкопрофильными специалистами, и многие другие преимущества.</p><a class="more-btn" href="#">УЗнать подробности </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="popup-block restore-block_wrap" data-block="6">
+            <div class="left-side">
+              <h2>
+                 Восстановить<br>пароль</h2>
+            </div>
+            <div class="right-side">
+              <div class="step-block first-step_wrap visible">
+                <h3>Укажите электронную почту, которую вы использовали для регистрации</h3>
+                <form class="form-send" action="#">
+                  <div class="form-field">
+                    <div class="error-message"><span>Электронная почта — чтобы продолжить, заполните</span><span>Например, mail@mail.ru</span></div><span class="placeholder">Электронная почта</span>
+                    <input class="isend checkMail" type="text" name="email">
+                  </div>
+                  <div class="error-block">
+                    <div class="form-info">
+                      <p>На эту почту нет зарегистрированного профиля. Вы можете <a class="reg-btn" href="#">зарегистрироваться </a>или изменить адрес электронной почты</p>
+                    </div>
+                  </div>
+                  <div class="form-btn">
+                    <input class="send-btn" type="submit" value="Восстановить">
+                  </div>
+                  <div class="form-info">
+                    <p>
+                       Вы можете <a class="login-btn" href="#">вернуться обратно к авторизации</a>, либо <a class="reg-btn" href="#">зарегистрироваться</a></p>
+                  </div>
+                </form>
+              </div>
+              <div class="step-block second-step_wrap">
+                <h3>Проверьте почту. Мы выслали на неё информацию для восстановления доступа к сайту</h3><a class="login-btn" href="#">Войти в профиль</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="preview-section_wrap">
+        <h1>Российский Сепсис Форум</h1>
+      </section>
+      <div class="breadcrumbs-block_wrap">
+        <div class="container">
+          <div class="breadcrumbs-block">
+            <ul class="breadcrumbs">
+              <li><a href="#"></a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#">Объем крови, венозная система, преднагрузка и сердеяный выброс</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="article-section_wrap">
+        <div class="article-top_part">
+          <div class="container">
+            <div class="date">12 августа 2017</div>
+            <div class="name"> <a href="#">Случай из практики </a><a href="#">Исследования </a><a href="#">Сепсис </a><a href="#">Вопросы и ответы							</a></div>
+            <h2 class="title">Объем крови, венозная система, преднагрузка и сердеяный выброс</h2>
+            <div class="disc">Актуальность проблемы сепсиса в настоящее время определяется несколькими причинами: значительной частотой заболевания, высокой летальностью.</div>
+            <div class="participants-list">
+              <li>
+                <div class="img-wrap"><img src="upload/face-3.png" alt=""></div>
+                <div class="name">Антонов А.Ф.</div>
+              </li>
+              <li>
+                <div class="img-wrap"><img src="upload/face-3.png" alt=""></div>
+                <div class="name">Антонов А.Ф.</div>
+              </li>
+              <li>
+                <div class="img-wrap"><img src="upload/face-3.png" alt=""></div>
+                <div class="name">Антонов А.Ф.</div>
+              </li>
+              <li>
+                <div class="img-wrap"><img src="upload/face-3.png" alt=""></div>
+                <div class="name">Антонов А.Ф.</div>
+              </li>
+              <li>
+                <div class="img-wrap"><img src="upload/face-3.png" alt=""></div>
+                <div class="name">Антонов А.Ф.</div>
+              </li>
+            </div>
+            <div class="social-block_wrap">
+              <div class="block"><a class="ok" href="#">22</a></div>
+              <div class="block"><a class="vk" href="#">88</a></div>
+              <div class="block"><a class="fb" href="#">9</a></div>
+              <div class="block"><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a></div>
+              <div class="block"><a class="more_btn" href="#"><span></span></a>
+                <div class="all-social_block">
+                  <ul>
+                    <li>Социальные сети</li>
+                    <li><a href="#">Google Plus, 9</a></li>
+                    <li><a href="#">Мой Круг, 23</a></li>
+                  </ul>
+                  <ul>
+                    <li>Дейстия</li>
+                    <li><a href="#">Отправить на почту</a></li>
+                    <li><a href="#">Напечатать</a></li>
+                    <li><a href="#">Скачать в pdf</a></li>
+                    <li><a href="#">Скачать в fb2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article-middle_part">
+          <div class="container">
+            <div class="article-text_block">
+              <div class="article-poster"><img src="upload/article_poser.jpg" alt=""></div>
+              <div class="text-aligner">
+                <div class="article-abstract_text">
+                  <p>aктуальность проблемы сепсиса в настоящее время определяется несколькими причинами: значительной частотой заболевания, летальностью и, следовательно, значительным экономическим ущербом, причиняемым этим заболеванием в экономически развитых странах.</p>
+                  <p>Актуальность проблемы сепсиса в настоящее время определяется несколькими причинами: значительной частотой заболевания, летальностью и, следовательно, значительным экономическим ущербом, причиняемым этим заболеванием в экономически развитых странах.</p>
+                  <div class="disc-block">
+                    <div class="title">Присоединяйтесь к обсуждению</div>
+                    <div class="text">Пишите комментарии к любым абзцам. Для этого выдеите абзац и нажмите на иконку комментария справа.</div>
+                  </div>
+                </div>
+                <div class="article-paragraph_block">
+                  <div class="text-block">
+                    <h3>Преднагрузка сердца</h3>
+                    <p>Термин “сеспис” как интернозологическое понятие определяет динамическое состояние, связанное с генерализацией инфекционного процесса, и используется в различных областях клинической медицины. Многообразие клинических проявлений сепсиса в сочетании с недостаточной определенностью самого понятия привело к его широкой терминологической трактовке. 
+                  	<div class="comment-block_wrap"><a class="comment_btn" href="#">0</a></div>
+		    </p>
+                    <p>Необходимость описания сепсиса как нозологической формы в различных областях медицины привело к появлению большого количества различного рода определений и классификаций сепсиса, в основу которых положены такие признаки, как клиническое течение (молниеносный, острый, подострый, хронический, рецидивирующий), локализация и наличие возбудителя на месте входных ворот (первичный, вторичный, криптогенный), характер входных ворот (раневой, гнойно-воспалительный, ожоговый и др.), локализация первичного очага (акушерско-гинекологический, ангиогенный, уросепсис, пупочный и др.), этиологический признак (грамнегативный, грампозитивный, стафилококковый, стрептококковый, колибациллярный, псевдомонадный, грибковый и т. д.) и другие.
+                  <div class="comment-block_wrap"><a class="comment_btn" href="#">3</a>
+                    <div class="comment-form_wrap"><a class="close-btn" href="#"></a>
+                      <form class="form-send" action="#">
+                        <div class="comment-block">
+                          <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                          <div class="content-block">
+                            <div class="top-part">
+                              <div class="info-block">
+                                <div class="name">П.П. Шариков											</div>
+                              </div>
+                            </div>
+                            <div class="middle-part">
+                              <div class="text-block_wrap">
+                                <div class="text-block">
+                                  <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                </div>
+                              </div>
+                              <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                            </div>
+                            <div class="bottom-part"></div>
+                          </div>
+                        </div>
+                        <div class="comment-block review">
+                          <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                          <div class="content-block">
+                            <div class="top-part">
+                              <div class="info-block">
+                                <div class="name">П.П. Шариков</div>
+                              </div>
+                            </div>
+                            <div class="middle-part">
+                              <div class="text-block_wrap">
+                                <div class="text-block">
+                                  <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                </div>
+                              </div>
+                              <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                            </div>
+                            <div class="bottom-part"></div>
+                          </div>
+                        </div>
+                        <div class="comment-block review">
+                          <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                          <div class="content-block">
+                            <div class="top-part">
+                              <div class="info-block">
+                                <div class="name">П.П. Шариков</div>
+                              </div>
+                            </div>
+                            <div class="middle-part">
+                              <div class="text-block_wrap">
+                                <div class="text-block">
+                                  <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                </div>
+                              </div>
+                              <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                            </div>
+                            <div class="bottom-part"></div>
+                          </div>
+                        </div><a class="all-comment-btn" href="#comment">Показать все комментарии</a>
+                      </form>
+                    </div>
+                  </div>
+		    </p>
+                  </div>
+                </div>
+                <div class="img-block"><img src="upload/article_poser.jpg" alt="">
+                  <div class="disc">В.Б. Белобородов, докт. мед. наук, Городская клиническая больница им. С.П. Боткина, Российская медицинская академия последипломного образования, Москва</div>
+                </div>
+                <div class="article-paragraph_block">
+                  <div class="text-block">
+                    <p>Термин “сеспис” как интернозологическое понятие определяет динамическое состояние, связанное с генерализацией инфекционного процесса, и используется в различных областях клинической медицины. Многообразие клинических проявлений сепсиса в сочетании с недостаточной определенностью самого понятия привело к его широкой терминологической трактовке. </p>
+                  </div>
+                  <div class="quote-block">
+                    <div class="text">Эпидемиологические исследования этиологической структуры сепсиса выявили динамику этого процесса, свидетельствующую о нарастающей.</div>
+                    <div class="author">Конкин Алекандр Филипович</div>
+                  </div>
+                  <div class="text-block">
+                    <p>Термин “сеспис” как интернозологическое понятие определяет динамическое состояние, связанное с генерализацией инфекционного процесса, и используется в различных областях клинической медицины. Многообразие клинических проявлений сепсиса в сочетании с недостаточной определенностью самого понятия привело к его широкой терминологической трактовке. </p>
+                    <p>Термин “сеспис” как интернозологическое понятие определяет динамическое состояние, связанное с генерализацией инфекционного процесса, и используется в различных областях клинической медицины. Многообразие клинических проявлений сепсиса в сочетании с недостаточной определенностью самого понятия привело к его широкой терминологической трактовке. </p>
+                  </div>
+                  <div class="comment-block_wrap"><a class="comment_btn" href="#">3</a>
+                    <div class="comment-form_wrap"><a class="close-btn" href="#"></a>
+                      <form class="form-send" action="#">
+                        <div class="comment-block">
+                          <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                          <div class="content-block">
+                            <div class="top-part">
+                              <div class="info-block">
+                                <div class="name">П.П. Шариков											</div>
+                              </div>
+                            </div>
+                            <div class="middle-part">
+                              <div class="text-block_wrap">
+                                <div class="text-block">
+                                  <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                </div>
+                              </div>
+                              <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                            </div>
+                            <div class="bottom-part"></div>
+                          </div>
+                        </div>
+                        <div class="comment-block review">
+                          <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                          <div class="content-block">
+                            <div class="top-part">
+                              <div class="info-block">
+                                <div class="name">П.П. Шариков</div>
+                              </div>
+                            </div>
+                            <div class="middle-part">
+                              <div class="text-block_wrap">
+                                <div class="text-block">
+                                  <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                </div>
+                              </div>
+                              <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                            </div>
+                            <div class="bottom-part"></div>
+                          </div>
+                        </div>
+                        <div class="comment-block review">
+                          <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                          <div class="content-block">
+                            <div class="top-part">
+                              <div class="info-block">
+                                <div class="name">П.П. Шариков</div>
+                              </div>
+                            </div>
+                            <div class="middle-part">
+                              <div class="text-block_wrap">
+                                <div class="text-block">
+                                  <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                </div>
+                              </div>
+                              <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                            </div>
+                            <div class="bottom-part"></div>
+                          </div>
+                        </div><a class="all-comment-btn" href="#comment">Показать все комментарии</a>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-block_wrap">
+                  <div class="slide-counts"><span class="current">1</span><span> / </span><span class="all"> </span></div>
+                  <div class="slider-for">
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                  </div>
+                  <div class="slider-nav">
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                    <div class="img-block"><img src="upload/articles.jpg" alt=""></div>
+                  </div>
+                  <div class="slider-disc">В.Б. Белобородов, докт. мед. наук, Городская клиническая больница им. С.П. Боткина, Российская медицинская академия последипломного образования, Москва</div>
+                </div>
+                <div class="article-paragraph_block">
+                  <div class="text-block">
+                    <h3>Преднагрузка сердца</h3>
+                    <p>Термин “сеспис” как интернозологическое понятие определяет динамическое состояние, связанное с генерализацией инфекционного процесса, и используется в различных областях клинической медицины. Многообразие клинических проявлений сепсиса в сочетании с недостаточной определенностью самого понятия привело к его широкой терминологической трактовке. </p>
+                    <p>Необходимость описания сепсиса как нозологической формы в различных областях медицины привело к появлению большого количества различного рода определений и классификаций сепсиса, в основу которых положены такие признаки, как клиническое течение (молниеносный, острый, подострый, хронический, рецидивирующий), локализация и наличие возбудителя на месте входных ворот (первичный, вторичный, криптогенный), характер входных ворот (раневой, гнойно-воспалительный, ожоговый и др.), локализация первичного очага (акушерско-гинекологический, ангиогенный, уросепсис, пупочный и др.), этиологический признак (грамнегативный, грампозитивный, стафилококковый, стрептококковый, колибациллярный, псевдомонадный, грибковый и т. д.) и другие.</p>
+                  </div>
+                  <div class="comment-block_wrap"><a class="comment_btn" href="#">0</a>
+                    <div class="comment-form_wrap"><a class="close-btn" href="#"></a>
+                      <form class="form-send" action="#">
+                        <div class="info-block">
+                          <div class="img-wrap"><img src="upload/face-3.png" alt=""></div>
+                          <div class="name">П.П. Шариков</div>
+                        </div>
+                        <div class="send-block">
+                          <textarea name="comment" placeholder="Напишите ваш комментарий…"></textarea>
+                          <input class="send-btn" type="submit" value="Написать">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="article-paragraph_block full-width">
+                  <div class="img-block"><img src="upload/articles-2.jpg" alt="">
+                    <div class="disc">В.Б. Белобородов, докт. мед. наук, Городская клиническая больница им. С.П. Боткина, Российская медицинская академия последипломного образования, Москва</div>
+                  </div>
+                  <div class="text-block">
+                    <p>Термин “сеспис” как интернозологическое понятие определяет динамическое состояние, связанное с генерализацией инфекционного процесса, и используется в различных областях клинической медицины. Многообразие клинических проявлений сепсиса в сочетании с недостаточной определенностью самого понятия привело к его широкой терминологической трактовке. 									</p>
+                  </div>
+                  <div class="comment-block_wrap"><a class="comment_btn" href="#">0</a>
+                    <div class="comment-form_wrap"><a class="close-btn" href="#"></a>
+                      <form class="form-send" action="#">
+                        <div class="info-block">
+                          <div class="img-wrap"><img src="upload/face-3.png" alt=""></div>
+                          <div class="name">П.П. Шариков</div>
+                        </div>
+                        <div class="send-block">
+                          <textarea name="comment" placeholder="Напишите ваш комментарий…"></textarea>
+                          <input class="send-btn" type="submit" value="Написать">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="article-paragraph_block">
+                  <div class="text-block">
+                    <h3>Преднагрузка сердца</h3>
+                    <p>Термин “сеспис” как интернозологическое понятие определяет динамическое состояние, связанное с генерализацией инфекционного процесса, и используется в различных областях клинической медицины. Многообразие клинических проявлений сепсиса в сочетании с недостаточной определенностью самого понятия привело к его широкой терминологической трактовке. </p>
+                    <p>Необходимость описания сепсиса как нозологической формы в различных областях медицины привело к появлению большого количества различного рода определений и классификаций сепсиса, в основу которых положены такие признаки, как клиническое течение (молниеносный, острый, подострый, хронический, рецидивирующий), локализация и наличие возбудителя на месте входных ворот (первичный, вторичный, криптогенный), характер входных ворот (раневой, гнойно-воспалительный, ожоговый и др.), локализация первичного очага (акушерско-гинекологический, ангиогенный, уросепсис, пупочный и др.), этиологический признак (грамнегативный, грампозитивный, стафилококковый, стрептококковый, колибациллярный, псевдомонадный, грибковый и т. д.) и другие.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rating-block_wrap">
+              <h6>Оцените статью</h6>
+              <div class="disc">Голосовали 213. Средная оценка 4,4</div>
+              <ul class="mark-list">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+              </ul>
+            </div>
+            <div class="social-block_wrap">
+              <div class="block"><a class="ok" href="#">22</a></div>
+              <div class="block"><a class="vk" href="#">88</a></div>
+              <div class="block"><a class="fb" href="#">9</a></div>
+              <div class="block"><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a></div>
+              <div class="block"><a class="more_btn" href="#"><span></span></a>
+                <div class="all-social_block">
+                  <ul>
+                    <li>Социальные сети</li>
+                    <li><a href="#">Google Plus, 9</a></li>
+                    <li><a href="#">Мой Круг, 23</a></li>
+                  </ul>
+                  <ul>
+                    <li>Дейстия</li>
+                    <li><a href="#">Отправить на почту</a></li>
+                    <li><a href="#">Напечатать</a></li>
+                    <li><a href="#">Скачать в pdf</a></li>
+                    <li><a href="#">Скачать в fb2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="quote-block_wrap">
+              <h5>Цитировать</h5>
+              <div class="link">Конкин А.А. Объем крови, венозная система, преднагрузка и сердечный выброс // Российский Еспси Форум // 12.08.2017 / http://sepsisforum.ru/article/321.html</div><a class="copy_btn" href="#">Скопировать</a>
+            </div>
+          </div>
+        </div>
+        <div class="article-bottom_part">
+          <div class="container">
+            <div class="materials-block_wrap">
+              <div class="left-part">
+                <h5>Информация и источники</h5>
+                <ul>
+                  <li>
+                    <div class="disc">Перевод</div>
+                    <div class="text">О военном положении [Текст]: Федеральный конституционный закон от 30 янв. 2002 г. № 1-ФКЗ // Собрание законодательства. – 2002. - № 5, (4 февр.). – С. 1485 – 1498 (ст. 375).</div>
+                  </li>
+                  <li>
+                    <div class="disc">Перевод</div>
+                    <div class="text">О военном положении [Текст]: Федеральный конституционный закон от 30 янв. 2002 г. № 1-ФКЗ // Собрание законодательства. – 2002. - № 5, (4 февр.). – С. 1485 – 1498 (ст. 375).</div>
+                  </li>
+                  <li>
+                    <div class="disc">Перевод</div>
+                    <div class="text">О военном положении [Текст]: Федеральный конституционный закон от 30 янв. 2002 г. № 1-ФКЗ // Собрание законодательства. – 2002. - № 5, (4 февр.). – С. 1485 – 1498 (ст. 375).</div>
+                  </li>
+                  <li>
+                    <div class="disc">Перевод</div>
+                    <div class="text">О военном положении [Текст]: Федеральный конституционный закон от 30 янв. 2002 г. № 1-ФКЗ // Собрание законодательства. – 2002. - № 5, (4 февр.). – С. 1485 – 1498 (ст. 375).</div>
+                  </li>
+                  <li>
+                    <div class="disc">Перевод</div>
+                    <div class="text">О военном положении [Текст]: Федеральный конституционный закон от 30 янв. 2002 г. № 1-ФКЗ // Собрание законодательства. – 2002. - № 5, (4 февр.). – С. 1485 – 1498 (ст. 375).</div>
+                  </li>
+                  <li>
+                    <div class="disc">Перевод</div>
+                    <div class="text">О военном положении [Текст]: Федеральный конституционный закон от 30 янв. 2002 г. № 1-ФКЗ // Собрание законодательства. – 2002. - № 5, (4 февр.). – С. 1485 – 1498 (ст. 375).</div>
+                  </li>
+                  <li>
+                    <div class="disc">Перевод</div>
+                    <div class="text">О военном положении [Текст]: Федеральный конституционный закон от 30 янв. 2002 г. № 1-ФКЗ // Собрание законодательства. – 2002. - № 5, (4 февр.). – С. 1485 – 1498 (ст. 375).</div>
+                  </li>
+                  <li>
+                    <div class="disc">Перевод</div>
+                    <div class="text">О военном положении [Текст]: Федеральный конституционный закон от 30 янв. 2002 г. № 1-ФКЗ // Собрание законодательства. – 2002. - № 5, (4 февр.). – С. 1485 – 1498 (ст. 375).</div>
+                  </li>
+                </ul>
+                <div class="show-more"><a class="btn" href="#">показать еще</a></div>
+              </div>
+              <div class="right-part">
+                <h5>Материалы к статье</h5>
+                <div class="material-block">
+                  <div class="block">
+                    <div class="title">Изображение</div>
+                    <ul>
+                      <li><a href="#">Материал к конференции</a>
+                        <div class="type">.DOC</div>
+                        <div class="size">23 КБ</div>
+                      </li>
+                      <li><a href="#">Материал к конференции</a>
+                        <div class="type">.EXL</div>
+                        <div class="size">23 КБ</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="block">
+                    <div class="title">Изображение</div>
+                    <ul>
+                      <li><a href="#">Материал к конференции</a>
+                        <div class="type">.PNG</div>
+                        <div class="size">23 КБ</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="block">
+                    <div class="title">Изображение</div>
+                    <ul>
+                      <li><a href="#">Материал к конференции</a>
+                        <div class="type">.PNG</div>
+                        <div class="size">23 КБ</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular-block_wrap separator-top">
+              <h5>Статьи по теме</h5>
+              <div class="popular-articles_wrap">
+                <div class="left-part">
+                  <div class="articles-item_block">
+                    <div class="img-block"><a href="#"><img src="upload/rectangle-3.jpg" alt=""></a></div>
+                    <div class="content-block"><a class="name" href="#">Случай из практики</a><a class="title" href="#">Объем крови, венозная система, преднагрузка и серденый выброс</a>
+                      <div class="info-block"><span class="date">12 августа 2017</span>
+                        <div class="aligned-items"><a class="comment" href="#">12</a><a class="like" href="#">4,4</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-part">
+                  <div class="articles-item_block">
+                    <div class="content-block"><a class="name" href="#">Случай из практики</a><a class="title" href="#">Объем крови, венозная система, преднагрузка и серденый выброс</a>
+                      <div class="info-block"><span class="date">12 августа 2017</span>
+                        <div class="aligned-items"><a class="comment" href="#">12</a><a class="like" href="#">4,4</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="articles-item_block">
+                    <div class="content-block"><a class="name" href="#">Случай из практики</a><a class="title" href="#">Объем крови, венозная система, преднагрузка и серденый выброс</a>
+                      <div class="info-block"><span class="date">12 августа 2017</span>
+                        <div class="aligned-items"><a class="comment" href="#">12</a><a class="like" href="#">4,4</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment-block_wrap" id="comment">
+              <h5>Комментарии</h5>
+              <div class="comment-form_wrap">
+                <form class="form-send" action="#">
+                  <div class="comment-form-block">
+                    <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                    <div class="comment-block">
+                      <textarea class="isend" name="comment" placeholder="Напишите ваш комментарий"></textarea>
+                      <input class="send-btn" type="submit" value="Написать">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="comments-block_wrap">
+                <div class="comment-block">
+                  <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                  <div class="content-block">
+                    <div class="top-part">
+                      <div class="info-block">
+                        <div class="name">П.П. Шариков</div>
+                        <div class="time">11 минут назад</div>
+                      </div>
+                      <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                    </div>
+                    <div class="middle-part">
+                      <div class="text-block_wrap">
+                        <div class="text-block">
+                          <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-part"></div>
+                  </div>
+                </div>
+                <div class="comment-block">
+                  <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                  <div class="content-block">
+                    <div class="top-part">
+                      <div class="info-block">
+                        <div class="name">П.П. Шариков</div>
+                        <div class="time">11 минут назад</div>
+                      </div>
+                      <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                    </div>
+                    <div class="middle-part">
+                      <div class="text-block_wrap">
+                        <div class="text-block">
+                          <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                          <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                          <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                        </div>
+                      </div><a class="read-all_btn" href="#">Читать все</a>
+                    </div>
+                    <div class="bottom-part"></div>
+                  </div>
+                </div>
+                <div class="comment-block">
+                  <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                  <div class="content-block">
+                    <div class="top-part">
+                      <div class="info-block">
+                        <div class="name">П.П. Шариков</div>
+                        <div class="time">11 минут назад</div>
+                      </div>
+                      <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                    </div>
+                    <div class="middle-part">
+                      <div class="text-block_wrap">
+                        <div class="text-block">
+                          <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                        </div>
+                      </div>
+                      <div class="comment-block">
+                        <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                        <div class="content-block">
+                          <div class="top-part">
+                            <div class="info-block">
+                              <div class="name">П.П. Шариков</div>
+                              <div class="time">11 минут назад</div>
+                            </div>
+                            <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                          </div>
+                          <div class="middle-part">
+                            <div class="text-block_wrap">
+                              <div class="text-block">
+                                <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                              </div>
+                            </div>
+                            <div class="comment-block">
+                              <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                              <div class="content-block">
+                                <div class="top-part">
+                                  <div class="info-block">
+                                    <div class="name">П.П. Шариков</div>
+                                    <div class="time">11 минут назад</div>
+                                  </div>
+                                  <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                                </div>
+                                <div class="middle-part">
+                                  <div class="text-block_wrap">
+                                    <div class="text-block">
+                                      <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.																	</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="bottom-part"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bottom-part"></div>
+                        </div>
+                      </div>
+                      <div class="comment-block">
+                        <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                        <div class="content-block">
+                          <div class="top-part">
+                            <div class="info-block">
+                              <div class="name">П.П. Шариков</div>
+                              <div class="time">11 минут назад</div>
+                            </div>
+                            <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                          </div>
+                          <div class="middle-part">
+                            <div class="text-block_wrap">
+                              <div class="text-block">
+                                <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                              </div>
+                            </div><a class="read-all_btn" href="#">Читать все</a>
+                          </div>
+                          <div class="bottom-part"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-part"></div>
+                  </div>
+                </div><a class="more_btn" href="#">Показать еще</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recomend-block_wrap">
+          <div class="container">
+            <h5>Рекомендуем прочитать</h5>
+            <div class="popular-articles_wrap">
+              <div class="left-part">
+                <div class="articles-item_block">
+                  <div class="img-block"><a href="#"><img src="upload/rectangle-4.jpg" alt=""></a></div>
+                  <div class="content-block"><a class="name" href="#">Случай из практики</a><a class="title" href="#">Объем крови, венозная система, преднагрузка и серденый выброс</a>
+                    <div class="info-block"><span class="date">12 августа 2017</span>
+                      <div class="aligned-items"><a class="comment" href="#">12</a><a class="like" href="#">4,4</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="articles-item_block">
+                  <div class="img-block"><a href="#"><img src="upload/rectangle-4.jpg" alt=""></a></div>
+                  <div class="content-block"><a class="name" href="#">Случай из практики</a><a class="title" href="#">Объем крови, венозная система, преднагрузка и серденый выброс</a>
+                    <div class="info-block"><span class="date">12 августа 2017</span>
+                      <div class="aligned-items"><a class="comment" href="#">12</a><a class="like" href="#">4,4</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-part">
+                <div class="articles-item_block">
+                  <div class="content-block"><a class="name" href="#">Случай из практики</a><a class="title" href="#">Объем крови, венозная система, преднагрузка и серденый выброс</a>
+                    <div class="info-block"><span class="date">12 августа 2017</span>
+                      <div class="aligned-items"><a class="comment" href="#">12</a><a class="like" href="#">4,4</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="articles-item_block">
+                  <div class="content-block"><a class="name" href="#">Случай из практики</a><a class="title" href="#">Объем крови, венозная система, преднагрузка и серденый выброс</a>
+                    <div class="info-block"><span class="date">12 августа 2017</span>
+                      <div class="aligned-items"><a class="comment" href="#">12</a><a class="like" href="#">4,4</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="left-block">
+          <div class="logo-block"><a class="logotype" href="#"></a></div>
+          <p>
+             © 2017. «Russian Sepsis Forum». <br>«Российский Сепсис Форум». Все права защищены. </p>
+          <p>Данный сайт предназначен исключительно для специалистов с высшим медицинским образованием.</p><a class="developers" href="#"></a>
+        </div>
+        <div class="right-block">
+          <div class="top-part">
+            <ul class="nav-list">
+              <li>Сепсис Форум</li>
+              <li><a href="">Мероприятия</a></li>
+              <li><a href="">Эксперты</a></li>
+              <li><a href="">Партнёры</a></li>
+              <li><a href="">Вакансии</a></li>
+            </ul>
+            <ul class="nav-list">
+              <li>Библиотека</li>
+              <li><a href="">Статьи</a></li>
+              <li><a href="">Случаи из практики</a></li>
+              <li><a href="">Видео</a></li>
+              <li><a href="">Архив документов</a></li>
+            </ul>
+            <ul class="nav-list">
+              <li>Консилиум</li>
+              <li><a href="">Вопросы и ответы</a></li>
+              <li><a href="">Опросы</a></li>
+            </ul>
+            <ul class="nav-list">
+              <li>Обучение</li>
+              <li><a href="">Вебинары</a></li>
+              <li><a href="">Курсы</a></li>
+              <li><a href="">Тесты</a></li>
+            </ul>
+          </div>
+          <div class="bottom-part">
+            <ul class="nav-list">
+              <li>Официально</li>
+              <li><a href="">О нас</a></li>
+              <li><a href="">Пользовательское соглашение</a></li>
+              <li><a href="">Политика конфиденциальности</a></li>
+            </ul>
+            <ul class="soc-list">
+              <li>Следите за нами в соцсетях</li>
+              <li> <a class="fb" href="#"></a><a class="ok" href="#"></a><a class="vk" href="#"></a><a class="mail" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade suggest" tabindex="-1" role="dialog" aria-hidden="true" id="offer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

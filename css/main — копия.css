@@ -1,0 +1,7 @@
+.list {
+  display: block; }
+  .list a {
+    color: red; }
+
+a {
+  display: none; }

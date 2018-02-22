@@ -1,0 +1,326 @@
+//***************стили для блоков на странице (секции, дивы и прочее)
+.articles-section_search-box{
+	.filter-block_wrap{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.filter-block{
+		margin-top: 40px;
+	}
+	.show_more_wrapper{
+		text-align: center;
+		margin-bottom: 120px;
+	}
+}
+
+.arch-articles-section_wrap{
+	.content-block_wrap{
+		display: flex;
+		justify-content: flex-start;
+	}
+	.toolbar{
+		min-width: 221px;
+	}
+	.social-wrap{
+		width: 100%;
+	}
+	.social-block_wrap{
+		margin: 0 auto 120px;
+	}
+
+}
+
+.arch-article-table{
+	.table_arch-article{
+		.publication{
+			padding: 0 30px 52px;
+			border-right: 2px solid rgba(151,151,151,.3);
+			width: 60%;
+		}
+		.counter_of_documents{
+			padding: 0 30px 52px;
+			text-align: center;
+			width: 15%;
+		}
+		.date_of_publish{
+			padding: 0 30px 52px;
+			text-align: center;
+		}
+	}
+	.title-row{
+		font-weight: bold;
+		td{
+			vertical-align: bottom;
+		}
+	}
+	a{
+		display: block;
+		color: inherit;
+	}
+}
+
+.arch-article-wrapper{
+	margin-left: 9%;
+	font-family: "PT_Sans-Web-Regular", sans-serif;
+	.back_link{
+		font-size: 14px;
+		color: #035599;
+		font-family: "PT_Sans-Web-Bold", sans-serif;
+		height: 17px;
+		margin-bottom: 15px;
+		letter-spacing: .8px;
+		display: block;
+	}
+	.single-article{
+		display: flex;
+	}
+	.single-article-image{
+		width: 100%;
+		max-width: 366px;
+		overflow: hidden;
+	}
+	.single-article__img{
+		display: block;
+		max-width: 366px;
+		max-height: 302px;
+		float: left;
+		&:hover{
+			transform: scale(1.2);
+			-webkit-transition: all 1.3s;
+			-moz-transition: all 1.3s;
+			-ms-transition: all 1.3s;
+			-o-transition: all 1.3s;
+			transition: all 1.3s;
+		}
+	}
+	.article__body{
+		padding: 25px;
+		background-color: #f7f7f7;
+		.article__categories-link{
+			font-size: 16px;
+			color: #035599;
+			text-transform: uppercase;
+			letter-spacing: 0.4px;
+			font-family: "PT_Sans-Web-Bold", sans-serif;
+			margin-right: 30px;
+		}
+		.article__title{
+			padding-top: 15px;
+			h2{
+				font-size: 28px;
+				line-height: 41px;
+				color: #000;
+				//font-family: "Merriweather", "PT_Sans-Web-Bold", serif;
+				font-weight: bold;
+			}
+		}
+		.article__authors{
+			margin-top: 15px;
+			.article__author{
+				color: #035599;
+				margin-right: 15px;
+				font-family: "PT_Sans-Web-Bold", sans-serif;
+			}
+		}
+		.article_date{
+			color: #d8d8d8;
+			font-family: "PT_Sans-Web-Regular", sans-serif;
+			text-transform: uppercase;
+			margin-top: 30px;
+		}
+	}
+	.article_documents{
+		.section-title{
+			color: #000;
+			font-size: 15px;
+			opacity: .30;
+			margin-top: 40px;
+			margin-bottom: 17px;
+		}
+
+		.documents{
+			.document_item{
+				margin: 18px 0;
+			}
+			.document-name{
+				font-family: "PT_Sans-Web-Bold", sans-serif;
+				font-size: 17px;
+				letter-spacing: 0.8px;
+				color: #035899;
+				text-transform: uppercase;
+			}
+			.document-file, .document-size{
+				font-size: 18px;
+				letter-spacing: 1px;
+				color: #000;
+				background-color: #d8d8d8;
+				margin: 0 10px;
+				text-transform: uppercase;
+				padding: 0 5px;
+			}
+			.document-size{
+				background: none;
+				margin-left: 0;
+			}
+			.document-date{
+				color: #000;
+				opacity: .5;
+				line-height: 22px;
+				font-size: 16px;
+			}
+		}
+
+		.blue-button{
+			width: 228px;
+			margin: 60px 0 90px;
+		}
+	}
+}
+
+//************основные стили (кнопки, инпуты и т.д.)
+.form-section{
+	width: 50%;
+	.search-form-field{
+		width: 100%;
+		max-width: 432px;
+		float: right;
+		input{
+			display: inline-block;
+			height: 70px;
+			object-fit: contain;
+			width: 100%;
+			font-family: "PT_Sans-Web-Regular", sans-serif;
+			font-size: 20px;
+			padding-left: 25px;
+			border: 1px solid rgba(3,88,153,.5);
+		}
+		.gray{
+			&::placeholder{
+				color: rgba(0,0,0,.5);
+			}
+		}
+		.i-search-tool{
+			background-image: url("../images/search-tool.svg");
+			background-repeat: no-repeat;
+			background-position: 97% center;
+			background-color: transparent;
+			padding-right: 10%;
+		}
+	}
+}
+
+.toolbar{
+	width: 15.34%;
+	margin-bottom: 30px;
+	margin-right: 40px;
+	.toolbar-header{
+		width: 100%;
+		border: 1px solid rgba(3,88,153,.5);
+		margin-bottom: 30px;
+		.toolbar-title{
+			font-size: 21px;
+			padding-left: 14px;
+			display: block;
+			height: 100%;
+			line-height: 57px;
+		}
+	}
+	.toolbar-help_text{
+		font-size: 16px;
+		line-height: 27px;
+		font-family: "PT_Sans-Web-Regular", sans-serif;
+		color: rgba(0,0,0,.5);
+		padding: 15px;
+	}
+	.toolbar-list{
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		.toolbar-list-item{
+			padding: 0;
+			margin: 0;
+			display: block;
+			font-size: 21px;
+			height: 100%;
+			line-height: 57px;
+			border: 1px solid rgba(3,88,153,.5);
+			margin-bottom: 20px;
+		}
+		.toolbar-list-link{
+			display: block;
+			text-decoration: none;
+			padding-left: 14px;
+		}
+		.disabled-item{
+			opacity: .5;
+			cursor: pointer;
+		}
+		.active-item{
+			border: none;
+			background-color: #035899;
+			a{
+				background-color: #035899;
+				color: #fff;
+			}
+		}
+	}
+}
+.shape {
+	background-image: url(../images/file.png);
+	width: 24px;
+	display: inline-block;
+	height: 32px;
+	position: relative;
+	top: -9px;
+	padding-top: 10px;
+	background-position: 0 0;
+}
+.blue-text{
+	color: rgba(3,88,153,1);
+}
+.red_button{
+	display: inline-block;
+	vertical-align: top;
+	min-width: 300px;
+	line-height: 66px;
+	opacity: .85;
+	border: 2px solid #bf2d3c;
+	font-family: "PT_Sans-Web-Bold", sans-serif;
+	font-size: 21px;
+	letter-spacing: 1.2px;
+	text-align: center;
+	color: #bf2d3c;
+	text-transform: uppercase;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 30px auto;
+	&:hover{
+		color: #fff;
+		background: #bf2d3c;
+		opacity: 1;
+	}
+}
+.blue-button{
+	display: block;
+	text-transform: uppercase;
+	font-family: PT_Sans-Web-Bold;
+	font-size: 14px;
+	letter-spacing: .8px;
+	text-align: center;
+	color: #035899;
+	border: 2px solid #035899;
+	height: 45px;
+	line-height: 41px;
+	padding: 0 18px;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+	&:hover{
+		transition: all .3s ease-in-out;
+		color: #fff;
+		background: #035899;
+	}
+}
