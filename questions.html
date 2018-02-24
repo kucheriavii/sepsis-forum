@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR">
+    <title>Sepsis</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/template_styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/my_fix.css">
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+    -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/my_fix.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-block"><a class="logotype" href="#"></a><a class="pacient" href="#">Пациентам</a>
+            <div class="specialist-nav"><a class="close-btn" href="#"></a><a class="specialist" href="#" data-link="1">Специалистам</a></div>
+            <div class="search-nav"><a class="close-btn"></a><a class="search" href="#" data-link="2"></a></div>
+            <div class="language-nav"><a class="close-btn"></a><a class="language" href="#" data-link="3">Rus</a></div>
+          </div>
+          <div class="authorization-block">
+            <div class="login-nav"><a class="close-btn"></a><a class="login" href="#" data-link="4">Вход</a></div>
+            <div class="registration-nav"><a class="close-btn"></a><a class="registration" href="#" data-link="5">Регистрация</a></div>
+          </div>
+        </nav>
+      </div>
+      <div class="header-popup_wrap">
+        <div class="container">
+          <div class="popup-block specialist-block_wrap" data-block="1">
+            <div class="left-side">
+              <div class="nav-block_wrap">
+                <div class="nav-row">
+                  <div class="top-part">
+                    <div class="name">Сепсис Форум</div>
+                    <div class="line"></div>
+                  </div>
+                  <div class="middle-part">
+                    <ul>
+                      <li><a href="#">О нас</a></li>
+                      <li><a href="#">Мероприятия</a></li>
+                      <li><a href="#">Эксперты</a></li>
+                      <li><a href="#">Партнёры</a></li>
+                      <li><a href="#">Вакансии</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nav-row">
+                  <div class="top-part">
+                    <div class="name">Библиотека</div>
+                    <div class="line"></div>
+                  </div>
+                  <div class="middle-part">
+                    <ul>
+                      <li><a href="#">Статьи</a></li>
+                      <li><a href="#">Случаи из практики</a></li>
+                      <li><a href="#">Видео</a></li>
+                      <li><a href="#">Архив документов</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nav-row">
+                  <div class="top-part">
+                    <div class="name">Консилиум</div>
+                    <div class="line"></div>
+                  </div>
+                  <div class="middle-part">
+                    <ul>
+                      <li><a href="#">Вопросы и ответы</a></li>
+                      <li><a href="#">Опросы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nav-row">
+                  <div class="top-part">
+                    <div class="name">Обучение</div>
+                    <div class="line"></div>
+                  </div>
+                  <div class="middle-part">
+                    <ul>
+                      <li><a href="#">Вебинары</a></li>
+                      <li><a href="#">Курсы</a></li>
+                      <li><a href="#">Тесты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-side">
+              <h2>
+                 Материалы <br>и сервисы для<br>специалистов</h2>
+            </div>
+          </div>
+          <div class="popup-block search-block_wrap" data-block="2">
+            <div class="left-side">
+              <div class="search-block">
+                <input type="text" name="search" placeholder="Введите, что хотите найти. Например, видео с Вишневским">
+              </div>
+              <div class="search-result_wrap">
+                <div class="result-block">
+                  <div class="title">Нашли 110 совпадения</div>
+                  <ul>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li class="profile"><a href="#">
+                        <div class="name">Профиль</div>
+                        <div class="disc">Александр Васильевич Вишне́вский</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                    <li><a href="#">
+                        <div class="name">Видео</div>
+                        <div class="disc">Вишневский рассказывает что-то интересное и нужное</div></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="right-side">
+              <h2>
+                 Поиск<br>на сайте</h2>
+            </div>
+          </div>
+          <div class="popup-block language-block_wrap" data-block="3"></div>
+          <div class="popup-block login-block_wrap" data-block="4">
+            <div class="left-side">
+              <h2>
+                 Вход для<br>специалистов</h2>
+            </div>
+            <div class="right-side">
+              <div class="login-form-container hidden">
+                <h3>Для того, чтобы получить доступ ко всем материалам, вам необходимо авторизоваться.</h3>
+                <form class="form-send" action="#">
+                  <div class="form-field">
+                    <div class="error-message"><span>Электронная почта — чтобы продолжить, заполните</span><span>Например, mail@mail.ru</span></div><span class="placeholder">Электронная почта</span>
+                    <input class="isend checkMail" type="text" name="email">
+                  </div>
+                  <div class="form-field">
+                    <div class="error-message"><span>Пароль — чтобы продолжить, заполните</span><span>Например, любая комбинация 7 цифр</span></div><span class="placeholder">Пароль</span>
+                    <input class="isend password" type="password" name="password">
+                  </div>
+                  <div class="check-field">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Запомнить меня на этом компьютере.</label>
+                  </div>
+                  <div class="form-btn">
+                    <input class="send-btn" type="submit" value="Войти">
+                    <div class="info">
+                      <p>Забыли пароль? <a class="restore-btn" href="#">Восстановить</a></p>
+                    </div>
+                  </div>
+                  <div class="form-info">
+                    <p>
+                       Впервые на сайте и хотите получить доступ
+                      к материалам? <a class="reg-btn" href="#">Зарегистрируйтесь </a>или <a href="#">поcмотрите информацию для пациентов</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+              <div class="login-error-container">
+                <h3 class="form-title">Подтвердите статус медицинского работника, чтобы получить доступ ко всему сайту</h3>
+                <p class="form-text">Дождитесь завершения проверки копии документа, которую вы приложили при регистрации. Это займет до трёх рабочих дней..</p>
+                <p class="form-text">Уведомление о завершении проверки получите по электронной почте, которую вы указали при регистрации.</p>
+                <hr class="form-separator">
+                <h3 class="form-title form-title_m-b_15">Остались вопросы?</h3>
+                <p class="form-text form-text_algn_c form-text_m-b_63"><a class="text-uppercase" href="mailto:info@sepsisforum.ru">напишите нам на почту</a>, будем рады ответить</p><a class="form-btn js-close-popup" href="#" data-target=".login-block_wrap">Понятно</a>
+              </div>
+              <div class="login-verify-error-container hidden">
+                <h3 class="form-title">Мы не смогли проверить документ, подтверждающий ваше медицинское образование</h3>
+                <p class="form-text">Если мы ошиблись, напишите нам, чтобы разрешить проблему.</p><a class="form-btn" href="mailto:info@sepsisforum.ru">Написать Письмо</a>
+              </div>
+            </div>
+          </div>
+          <div class="popup-block registration-block_wrap" data-block="5">
+            <div class="left-side">
+              <h2>
+                 Регистрация<br>для специалистов</h2>
+            </div>
+            <div class="right-side">
+              <div class="nav-block_wrap">
+                <ul class="nav-list">
+                  <li data-step="1"><a href="#">1</a></li>
+                  <li data-step="2"><a href="#">2</a></li>
+                  <li data-step="3"><a href="#">3</a></li>
+                  <li data-step="4"><a href="#">4    </a></li>
+                </ul>
+              </div>
+              <div class="content-block_wrap">
+                <form class="form-send" action="#" enctype="multipart/form-data">
+                  <div class="step-block first-step_wrap visible" data-blocks="1">
+                    <h3>Давайте познакомимся</h3>
+                    <div class="block-field_wrap">
+                      <div class="form-field">
+                        <div class="error-message"><span>Фамилия — чтобы продолжить, заполните</span><span>Например, Пирогов</span></div><span class="placeholder">Фамилия</span>
+                        <input class="isend" type="text" name="firstname">
+                      </div>
+                      <div class="form-field">
+                        <div class="error-message"><span>Имя — чтобы продолжить, заполните</span><span>Например, Николай</span></div><span class="placeholder">Имя</span>
+                        <input class="isend" type="text" name="secondname">
+                      </div>
+                      <div class="form-field">
+                        <div class="error-message"><span>Отчество — чтобы продолжить, заполните</span><span>Например, Николаевич</span></div><span class="placeholder">Отчество</span>
+                        <input class="isend" type="text" name="lastname">
+                      </div>
+                      <div class="form-btn">
+                        <input class="step-btn" type="submit" value="Продолжить" data-move="1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step-block confirm-step_wrap" data-blocks="2">
+                    <h3>Подтвердите статус</h3>
+                    <div class="block-field_wrap">
+                      <p class="form-text">Загрузите фотографию или скан документа, подтверждающий ваш статус медицинского работника:</p>
+                      <div class="form-field form-field_m-b_50 file-upload">
+                        <input class="isend" type="file" name="confirm_file">
+                        <div class="file-upload-progress">
+                          <div class="file-upload-progress-bar"></div>
+                          <div class="file-upload-status" data-error-label="Загрузка не удалась" data-abort-label="Загрузка прервана">Загрузить файл</div>
+                        </div>
+                      </div>
+                      <p class="form-text">Или, если у вас есть код приглашения, введите его ниже. Загружать подтверждающий документ в этом случае не обязательно.</p>
+                      <div class="form-field">
+                        <div class="error-message"><span>4-х значный код приглашения</span><span>Попробуйте ввести еще раз</span></div><span class="placeholder">4-х значный код приглашения</span>
+                        <input class="isend" type="text" name="code" maxlength="4">
+                      </div>
+                      <div class="form-btn">
+                        <input class="step-btn" type="submit" value="Продолжить" data-move="2">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step-block second-step_wrap" data-blocks="3">
+                    <h3>Где работаете</h3>
+                    <div class="block-field_wrap">
+                      <div class="form-field">
+                        <div class="error-message"><span>Город — чтобы продолжить, заполните</span><span>Например, Москва</span></div><span class="placeholder">Город</span>
+                        <input class="isend" type="text" name="city">
+                      </div>
+                      <div class="form-field">
+                        <div class="error-message"><span>Место работы — чтобы продолжить, заполните</span><span>Например, госпитель Вишневского</span></div><span class="placeholder">Место работы</span>
+                        <input class="isend search-input" type="text" name="place">
+                        <div class="place-result_wrap">
+                          <div class="result-block">
+                            <div class="title">Нашли 110 меси</div>
+                            <ul>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                              <li><a class="name" href="#">Госпитель, который помещается на несколько строчек, а точнее на две</a></li>
+                            </ul>
+                            <div class="more-place_wrap">
+                              <div class="title">Не нашли свое место работы в списке? Введите название в поле ниже и нажмите «Ввод» на клавиатуре:</div>
+                              <div class="form-field"><span class="placeholder">Например, университетская клиническая больница №1 Первого МГМУ им. И.М. Сеченова и еще одна строчка</span>
+                                <textarea type="text" name="newPlace"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-field">
+                        <div class="error-message"><span>Контактный телефон — чтобы продолжить, заполните</span><span>Например, +7 987 654-32-10</span></div><span class="placeholder">Контактный телефон</span>
+                        <input class="isend phone" type="text" name="phone">
+                      </div>
+                      <div class="form-btn">
+                        <input class="step-btn" type="submit" value="Продолжить" data-move="3">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step-block third-step_wrap" data-blocks="4">
+                    <h3>Создание профиля</h3>
+                    <div class="block-field_wrap">
+                      <div class="form-field">
+                        <div class="error-message"><span>Электронная почта — чтобы продолжить, заполните</span><span>Например, mail@mail.ru</span></div><span class="placeholder">Электронная почта</span>
+                        <input class="isend checkMail" type="text" name="email">
+                      </div>
+                      <div class="form-field">
+                        <div class="error-message"><span>Пароль — чтобы продолжить, заполните</span><span>Например, любая комбинация 7 цифр</span></div><span class="placeholder">Пароль</span>
+                        <input class="isend password" type="password" name="password">
+                      </div>
+                      <div class="check-field">
+                        <input class="isend" type="checkbox" id="media" name="media">
+                        <label for="media">Подписаться на информационную рассылку. Позже можно будет изменить параметры уведомлений</label>
+                      </div>
+                      <div class="check-field">
+                        <input class="isend" type="checkbox" id="agree" name="agree">
+                        <label for="agree">Подтверждаю <a href="#">УСЛОВИЯ САЙТА</a></label>
+                      </div>
+                      <div class="form-btn">
+                        <input class="send-btn" type="submit" value="Зарегистрироваться" data-move="4">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step-block fourth-step_wrap">
+                    <h3>На ваш адрес электронной почты отправлено письмо для подтверждения регистрации</h3>
+                    <div class="advantages-block">
+                      <h3>Получите преимущества</h3>
+                      <p>Вы можете вступить в Ассоциацию «Сепсис Форум». Это позволит вам получать доступ к специальным мероприятиям, консультацию с лучшими узкопрофильными специалистами, и многие другие преимущества.</p><a class="more-btn" href="#">УЗнать подробности </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="popup-block restore-block_wrap" data-block="6">
+            <div class="left-side">
+              <h2>
+                 Восстановить<br>пароль</h2>
+            </div>
+            <div class="right-side">
+              <div class="step-block first-step_wrap visible">
+                <h3>Укажите электронную почту, которую вы использовали для регистрации</h3>
+                <form class="form-send" action="#">
+                  <div class="form-field">
+                    <div class="error-message"><span>Электронная почта — чтобы продолжить, заполните</span><span>Например, mail@mail.ru</span></div><span class="placeholder">Электронная почта</span>
+                    <input class="isend checkMail" type="text" name="email">
+                  </div>
+                  <div class="error-block">
+                    <div class="form-info">
+                      <p>На эту почту нет зарегистрированного профиля. Вы можете <a class="reg-btn" href="#">зарегистрироваться </a>или изменить адрес электронной почты</p>
+                    </div>
+                  </div>
+                  <div class="form-btn">
+                    <input class="send-btn" type="submit" value="Восстановить">
+                  </div>
+                  <div class="form-info">
+                    <p>
+                       Вы можете <a class="login-btn" href="#">вернуться обратно к авторизации</a>, либо <a class="reg-btn" href="#">зарегистрироваться</a></p>
+                  </div>
+                </form>
+              </div>
+              <div class="step-block second-step_wrap">
+                <h3>Проверьте почту. Мы выслали на неё информацию для восстановления доступа к сайту</h3><a class="login-btn" href="#">Войти в профиль</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="preview-section_wrap">
+        <h1>Российский Сепсис Форум</h1>
+      </section>
+      <div class="breadcrumbs-block_wrap">
+        <div class="container">
+          <div class="breadcrumbs-block">
+            <ul class="breadcrumbs">
+              <li><a href="#"></a></li>
+              <li><a href="#">Вопросы и ответы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="articles-section_wrap question-section-wrap">
+        <div class="articles-top_part">
+          <div class="container">
+            <div class="filter-block_wrap">
+              <div class="filter-title_wrap">
+                <h2>Вопросы и ответы</h2>
+                <div class="filter-block">
+                  <form action="#">
+                    <div class="filter-item single-select">
+                      <select class="selectpicker" name="theme_select1">
+                        <option value="0">самые популярные</option>
+                        <option value="1">самые свежие</option>
+                        <option value="2">самые свежие</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="button-block">
+                <a class="blue-full-button ask-the-question" href="#">Задать вопрос</a>
+                <span class="text-message">Не нашли вопрос? Задайте его сами</span>
+              </div>
+            </div>
+
+            <div class="filter-block_wrap search-block_wrap">
+              <div class="search-form-field">
+                <input type="text" name="keyword" class="form-field__input gray i-search-tool" placeholder="Искать по имени файла или материала" value="">
+                <div class="toggle-block">
+                    <div class="toggle-container">
+                        <a href="#" data-action="SUBSCRIBTION" class="toggle">
+                            <span class="toggle-item"></span>
+                        </a>
+                    </div>
+                    <span class="text-message">Показывать только с ответами</span>
+                </div>
+                  <a href="ARTICLES" data-action="SUBSCRIBTION" class="subscription__toggle js-toggle-subscription ">
+                    <span class="subscription__toggle-item"></span>
+                  </a>
+              </div>
+
+              <div class="button-block">
+                <a class="blue-button js-open-extended-search" href="#">Расширеный поиск</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <section class="question-content-wrap">
+            <div class="container">
+                <div class="answers-wrap answer-left">
+                    <div class="answer">
+                        <div class="answer_title">Ответ на вопрос В.В Кулабухова</div>
+                        <div class="answer_block_header_wrap">
+                            <img src="images/avatar.png" alt="avatar" class="avatar_answer">
+                            <div class="answer_author-wrap">
+                                <a href="#" class="answer_author-name">П.П. Шариков</a>
+                                <span class="answer_author-date">22 Августа 2017</span>
+                            </div>
+                            <div class="answer-social">
+                                <a href="#" class="answer-comments">
+                                    <img src="images/comment.svg" alt="like" class="answer-comment_icon">
+                                    <span class="answer-icon_count">12</span>
+                                </a>
+                                <a href="#" class="answer-likes">
+                                    <img src="images/heart.svg" alt="" class="answer-like_icon">
+                                    <span class="answer-icon_count">12</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="answer_tags">
+                            <ul class="answer-tags-list">
+                                <li class="answer-atg-item"><a href="#" class="answer-tag-list">Вирусология</a></li>
+                                <li class="answer-atg-item"><a href="#" class="answer-tag-list">Случай из практики</a></li>
+                            </ul>
+                        </div>
+                        <div class="answer-text">
+                            <p>Уважаемый Владимир Витальевич, прокомментируйте, пожалуйста, ситуацию: Ребенку проведена гемодинамическая коррекция сложного ВПС (допустим, системно-легочный или кавапульмональный шунт). Он пожизненно будет…</p>
+                        </div>
+                        <a href="#" class="answer_read-more blue-text">Читать ответ полностью</a>
+                    </div>
+                    <div class="answer">
+                        <div class="answer_title">Ответ на вопрос В.В Кулабухова</div>
+                        <div class="answer_block_header_wrap">
+                            <img src="images/avatar.png" alt="avatar" class="avatar_answer">
+                            <div class="answer_author-wrap">
+                                <a href="#" class="answer_author-name">П.П. Шариков</a>
+                                <span class="answer_author-date">22 Августа 2017</span>
+                            </div>
+                            <div class="answer-social">
+                                <a href="#" class="answer-comments">
+                                    <img src="images/comment.svg" alt="like" class="answer-comment_icon">
+                                    <span class="answer-icon_count">12</span>
+                                </a>
+                                <a href="#" class="answer-likes">
+                                    <img src="images/heart.svg" alt="" class="answer-like_icon">
+                                    <span class="answer-icon_count">12</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="answer_tags">
+                            <ul class="answer-tags-list">
+                                <li class="answer-atg-item"><a href="#" class="answer-tag-list">Вирусология</a></li>
+                                <li class="answer-atg-item"><a href="#" class="answer-tag-list">Случай из практики</a></li>
+                            </ul>
+                        </div>
+                        <div class="answer-text">
+                            <p>Уважаемый Владимир Витальевич, прокомментируйте (допустим, системно-легочный или кавапульмональный шунт). Он пожизненно будет…</p>
+                        </div>
+                        <a href="#" class="answer_read-more blue-text">Читать ответ полностью</a>
+                    </div>
+                    <div class="answer">
+                        <div class="answer_title">Ответ на вопрос В.В Кулабухова</div>
+                        <div class="answer_block_header_wrap">
+                            <img src="images/avatar.png" alt="avatar" class="avatar_answer">
+                            <div class="answer_author-wrap">
+                                <a href="#" class="answer_author-name">П.П. Шариков</a>
+                                <span class="answer_author-date">22 Августа 2017</span>
+                            </div>
+                            <div class="answer-social">
+                                <a href="#" class="answer-comments">
+                                    <img src="images/comment.svg" alt="like" class="answer-comment_icon">
+                                    <span class="answer-icon_count">12</span>
+                                </a>
+                                <a href="#" class="answer-likes">
+                                    <img src="images/heart.svg" alt="" class="answer-like_icon">
+                                    <span class="answer-icon_count">12</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="answer_tags">
+                            <ul class="answer-tags-list">
+                                <li class="answer-atg-item"><a href="#" class="answer-tag-list">Вирусология</a></li>
+                                <li class="answer-atg-item"><a href="#" class="answer-tag-list">Случай из практики</a></li>
+                            </ul>
+                        </div>
+                        <div class="answer-text">
+                            <p>Уважаемый Владимир Витальевич, прокомментируйте (допустим, системно-легочный или кавапульмональный шунт). Он пожизненно будет…</p>
+                        </div>
+                        <a href="#" class="answer_read-more blue-text">Читать ответ полностью</a>
+                    </div>
+                </div>
+                <div class="answers-wrap answer-right">
+                    <div class="answer">
+                        <div class="answer_title">Ответ на вопрос В.В Кулабухова</div>
+                        <div class="answer_block_header_wrap">
+                            <img src="images/avatar.png" alt="avatar" class="avatar_answer">
+                            <div class="answer_author-wrap">
+                                <a href="#" class="answer_author-name">У.В. Шаманов</a>
+                                <span class="answer_author-date">11 Августа 2017</span>
+                            </div>
+                            <div class="answer-social">
+                                <a href="#" class="answer-comments">
+                                    <img src="images/comment.svg" alt="like" class="answer-comment_icon">
+                                    <span class="answer-icon_count">12</span>
+                                </a>
+                                <a href="#" class="answer-likes">
+                                    <img src="images/heart.svg" alt="" class="answer-like_icon">
+                                    <span class="answer-icon_count">12</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="answer_tags">
+                            <ul class="answer-tags-list">
+                                <li class="answer-atg-item"><a href="#" class="answer-tag-list">Вирусология</a></li>
+                                <li class="answer-atg-item"><a href="#" class="answer-tag-list">Случай из практики</a></li>
+                            </ul>
+                        </div>
+                        <div class="answer-text">
+                            <p>Уважаемый Владимир Витальевич! Скажите, пожалуйста, насколько возможным предсавляеся проведение сепсис-школы в Колуге?</p>
+                        </div>
+                        <a href="#" class="answer_read-more blue-text">Читать ответ полностью</a>
+                    </div>
+                    <div class="answer">
+                        <div class="answer_title">Ответ на вопрос В.В Кулабухова</div>
+                        <div class="answer_block_header_wrap">
+                            <img src="images/avatar.png" alt="avatar" class="avatar_answer">
+                            <div class="answer_author-wrap">
+                                <a href="#" class="answer_author-name">У.В. Шаманов</a>
+                                <span class="answer_author-date">11 Августа 2017</span>
+                            </div>
+                            <div class="answer-social">
+                                <a href="#" class="answer-comments">
+                                    <img src="images/comment.svg" alt="like" class="answer-comment_icon">
+                                    <span class="answer-icon_count">12</span>
+                                </a>
+                                <a href="#" class="answer-likes">
+                                    <img src="images/heart.svg" alt="" class="answer-like_icon">
+                                    <span class="answer-icon_count">12</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="answer_tags">
+                            <ul class="answer-tags-list">
+                                <li class="answer-atg-item"><a href="#" class="answer-tag-list">Вирусология</a></li>
+                                <li class="answer-atg-item"><a href="#" class="answer-tag-list">Случай из практики</a></li>
+                            </ul>
+                        </div>
+                        <div class="answer-text">
+                            <p>Уважаемый Владимир Витальевич! Скажите, пожалуйста, насколько возможным предсавляеся проведение сепсис-школы в Колуге?</p>
+                        </div>
+                        <a href="#" class="answer_read-more blue-text">Читать ответ полностью</a>
+                    </div>
+                    <div class="answer">
+                        <div class="answer_title">Ответ на вопрос В.В Кулабухова</div>
+                        <div class="answer_block_header_wrap">
+                            <img src="images/avatar.png" alt="avatar" class="avatar_answer">
+                            <div class="answer_author-wrap">
+                                <a href="#" class="answer_author-name">У.В. Шаманов</a>
+                                <span class="answer_author-date">11 Августа 2017</span>
+                            </div>
+                            <div class="answer-social">
+                                <a href="#" class="answer-comments">
+                                    <img src="images/comment.svg" alt="like" class="answer-comment_icon">
+                                    <span class="answer-icon_count">12</span>
+                                </a>
+                                <a href="#" class="answer-likes">
+                                    <img src="images/heart.svg" alt="" class="answer-like_icon">
+                                    <span class="answer-icon_count">12</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="answer_tags">
+                            <ul class="answer-tags-list">
+                                <li class="answer-atg-item"><a href="#" class="answer-tag-list">Вирусология</a></li>
+                                <li class="answer-atg-item"><a href="#" class="answer-tag-list">Случай из практики</a></li>
+                            </ul>
+                        </div>
+                        <div class="answer-text">
+                            <p>Уважаемый Владимир Витальевич! Скажите, пожалуйста, насколько возможным предсавляеся проведение сепсис-школы в Колуге?</p>
+                        </div>
+                        <a href="#" class="answer_read-more blue-text">Читать ответ полностью</a>
+                    </div>
+                </div>
+                <div class="show_more_wrapper">
+                    <a href="javascript:void(0);" class="red_button">Показать еще</a>
+                </div>
+            </div>
+        </section>
+        <div class="slide-box question_slide-box slide-box-visible">
+              <div class="slide-box_wrapper question_slide-box_wrapper">
+                  <a href="#" class="slide-box__close">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                          <path fill="#FFF" fill-rule="evenodd" d="M27.901 27.893A14.62 14.62 0 0 1 17.5 32.2c-3.927 0-7.62-1.528-10.396-4.304A14.605 14.605 0 0 1 2.8 17.5c0-3.928 1.53-7.62 4.306-10.396A14.612 14.612 0 0 1 17.503 2.8c3.927 0 7.62 1.528 10.397 4.304 5.733 5.732 5.733 15.057.001 20.79m1.981-22.77A17.393 17.393 0 0 0 17.504 0 17.384 17.384 0 0 0 5.128 5.124 17.379 17.379 0 0 0 0 17.5a17.373 17.373 0 0 0 5.125 12.376A17.384 17.384 0 0 0 17.501 35c4.677 0 9.074-1.82 12.383-5.127 6.822-6.823 6.821-17.925-.002-24.749m-9.308 7.21L17.5 15.408l-3.074-3.074a1.478 1.478 0 0 0-2.092 0 1.478 1.478 0 0 0 0 2.093l3.074 3.073-3.074 3.074A1.478 1.478 0 0 0 13.38 23.1c.379 0 .756-.145 1.046-.434l3.074-3.073 3.074 3.073a1.476 1.476 0 0 0 2.092 0 1.478 1.478 0 0 0 0-2.092L19.592 17.5l3.074-3.073a1.478 1.478 0 0 0 0-2.093 1.478 1.478 0 0 0-2.092 0z"></path>
+                      </svg>
+                  </a>
+                  <div class="slide-box__content">
+                      <div class="ask-block">
+                          <h3 class="question-header">Вопрос</h3>
+                          <div class="answer wave">
+                              <div class="answer_block_header_wrap">
+                                  <img src="images/avatar1.jpg" alt="avatar" class="avatar_answer">
+                                  <div class="answer_author-wrap">
+                                      <a href="#" class="answer_author-name">П.П. Шариков</a>
+                                      <span class="answer_author-date">22 Августа 2017</span>
+                                  </div>
+                              </div>
+                              <div class="answer_tags">
+                                  <ul class="answer-tags-list">
+                                      <li class="answer-atg-item"><a href="#" class="answer-tag-list">Вирусология</a></li>
+                                      <li class="answer-atg-item"><a href="#" class="answer-tag-list">Случай из практики</a></li>
+                                  </ul>
+                              </div>
+                              <div class="answer-text">
+                                  <p>Уважаемый Владимир Витальевич, прокомментируйте, пожалуйста, ситуацию: Ребенку проведена гемодинамическая коррекция сложного ВПС (допустим, системно-легочный или кавапульмональный шунт). Уважаемый Владимир Витальевич, прокомментируйте, пожалуйста, ситуацию: Ребенку проведена гемодинамическая коррекция сложного ВПС (допустим, системно-легочный или кавапульмональный шунт). </p>
+                                  <p>Уважаемый Владимир Витальевич, прокомментируйте, пожалуйста, ситуацию: Ребенку проведена гемодинамическая коррекция сложного ВПС (допустим, системно-легочный или кавапульмональный шунт).</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="answers-block">
+                          <h3 class="question-header">Ответ</h3>
+                          <div class="answer">
+                              <div class="answer_block_header_wrap">
+                                  <img src="images/avatar1.jpg" alt="avatar" class="avatar_answer">
+                                  <div class="answer_author-wrap">
+                                      <a href="#" class="answer_author-name">П.П. Шариков</a>
+                                      <span class="answer_author-date">22 Августа 2017</span>
+                                  </div>
+                              </div>
+                              <div class="answer_tags">
+                                  <ul class="answer-tags-list">
+                                      <li class="answer-atg-item"><a href="#" class="answer-tag-list">Вирусология</a></li>
+                                      <li class="answer-atg-item"><a href="#" class="answer-tag-list">Случай из практики</a></li>
+                                  </ul>
+                              </div>
+                              <div class="answer-text">
+                                  <p>Уважаемый Владимир Витальевич, прокомментируйте, пожалуйста, ситуацию: Ребенку проведена гемодинамическая коррекция сложного ВПС (допустим, системно-легочный или кавапульмональный шунт). Уважаемый Владимир Витальевич, прокомментируйте, пожалуйста, ситуацию: Ребенку проведена гемодинамическая коррекция сложного ВПС (допустим, системно-легочный или кавапульмональный шунт). </p>
+                                  <p>Уважаемый Владимир Витальевич, прокомментируйте, пожалуйста, ситуацию: Ребенку проведена гемодинамическая коррекция сложного ВПС (допустим, системно-легочный или кавапульмональный шунт).</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="rating-box answer_raiting-box">
+                          <h6>Оцените статью</h6>
+                          <div class="disc">Голосовали 213. Средная оценка 4,4</div>
+                          <ul class="mark-list">
+                              <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                          </ul>
+                      </div>
+                      <div class="article-section_wrap social-wrap">
+                          <div class="social-block_wrap print_hidden_wrap">
+                              <div class="block"><a class="ok" data-social="odnoklassniki" href="#"></a></div>
+                              <div class="block"><a class="vk" data-social="vkontakte" href="#"></a></div>
+                              <div class="block"><a class="fb" data-social="facebook" href="#"></a></div>
+                              <div class="block" id="main_909"><a class="favorite_btn " href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Добавить в избранное"></a></div>
+                              <div class="block"><a class="more_btn" href="#"><span></span></a>
+                                  <div class="all-social_block">
+                                      <ul>
+                                          <li>Социальные сети</li>
+                                          <li><a data-social="googleplus" href="#">Google Plus</a></li>
+                                          <li><a data-social="moimir" href="#">Мой Мир</a></li>
+                                      </ul>
+                                      <ul>
+                                          <li>Действия</li>
+                                          <li><a href="mailto:boganmail@gmail.com?body=%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D1%8E%20%D0%BF%D1%80%D0%BE%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C%3A%20http%3A%2F%2Fsepsis.devhub.pixelset.ru%2Farticles%2Fdannaya-statya-yavlyaetsya-proverochnoy%2F&amp;subject=%D0%94%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F%20%D1%8F%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BE%D1%87%D0%BD%D0%BE%D0%B9">Отправить на почту</a></li>
+                                          <li><a href="javascript:void(0);" onclick="CallPrint()">Напечатать</a></li>
+                                          <li><a href="/upload/articles_pdf/909_file.pdf" download="">Скачать в pdf</a></li>        </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="comment-block_wrap" id="comment">
+                          <h5 class="comments-header">Комментарии</h5>
+                          <div class="comment-form_wrap">
+                              <form class="form-send" action="#">
+                                  <div class="comment-form-block">
+                                      <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                                      <div class="comment-block">
+                                          <textarea class="isend" name="comment" placeholder="Напишите ваш комментарий"></textarea>
+                                          <input class="send-btn" type="submit" value="Написать">
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="comments-block_wrap">
+                              <div class="comment-block">
+                                  <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                                  <div class="content-block">
+                                      <div class="top-part">
+                                          <div class="info-block">
+                                              <div class="name">П.П. Шариков</div>
+                                              <div class="time">11 минут назад</div>
+                                          </div>
+                                          <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                                      </div>
+                                      <div class="middle-part">
+                                          <div class="text-block_wrap">
+                                              <div class="text-block">
+                                                  <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="bottom-part"></div>
+                                  </div>
+                              </div>
+                              <div class="comment-block">
+                                  <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                                  <div class="content-block">
+                                      <div class="top-part">
+                                          <div class="info-block">
+                                              <div class="name">П.П. Шариков</div>
+                                              <div class="time">11 минут назад</div>
+                                          </div>
+                                          <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                                      </div>
+                                      <div class="middle-part">
+                                          <div class="text-block_wrap">
+                                              <div class="text-block">
+                                                  <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                                  <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                                  <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                              </div>
+                                          </div><a class="read-all_btn" href="#">Читать все</a>
+                                      </div>
+                                      <div class="bottom-part"></div>
+                                  </div>
+                              </div>
+                              <div class="comment-block">
+                                  <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                                  <div class="content-block">
+                                      <div class="top-part">
+                                          <div class="info-block">
+                                              <div class="name">П.П. Шариков</div>
+                                              <div class="time">11 минут назад</div>
+                                          </div>
+                                          <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                                      </div>
+                                      <div class="middle-part">
+                                          <div class="text-block_wrap">
+                                              <div class="text-block">
+                                                  <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                              </div>
+                                          </div>
+                                          <div class="comment-block">
+                                              <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                                              <div class="content-block">
+                                                  <div class="top-part">
+                                                      <div class="info-block">
+                                                          <div class="name">П.П. Шариков</div>
+                                                          <div class="time">11 минут назад</div>
+                                                      </div>
+                                                      <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                                                  </div>
+                                                  <div class="middle-part">
+                                                      <div class="text-block_wrap">
+                                                          <div class="text-block">
+                                                              <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.</p>
+                                                          </div>
+                                                      </div>
+                                                      <div class="comment-block">
+                                                          <div class="img-block"><img src="upload/face-3.png" alt=""></div>
+                                                          <div class="content-block">
+                                                              <div class="top-part">
+                                                                  <div class="info-block">
+                                                                      <div class="name">П.П. Шариков</div>
+                                                                      <div class="time">11 минут назад</div>
+                                                                  </div>
+                                                                  <div class="interface-block"><a class="reply_btn" href="#"></a><a class="favorite_btn" href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Добавлено в избранное"></a><a class="like_btn" href="#">2</a></div>
+                                                              </div>
+                                                              <div class="middle-part">
+                                                                  <div class="text-block_wrap">
+                                                                      <div class="text-block">
+                                                                          <p>Коллеги, вы бы хоть где-то выше указали кто автор и что это всего лишь перевод фрагмента полнотектовой англояpычной статьи на котору ниже идет ссылка.																	</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="bottom-part"></div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="bottom-part"></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="bottom-part"></div>
+                                  </div>
+                              </div><a class="more_btn" href="#">Показать еще</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  formSlider('0','100');
+                  selectStyle();
+                  formDatePicker();
+              </script>
+          </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="left-block">
+          <div class="logo-block"><a class="logotype" href="#"></a></div>
+          <p>
+             © 2017. «Russian Sepsis Forum». <br>«Российский Сепсис Форум». Все права защищены. </p>
+          <p>Данный сайт предназначен исключительно для специалистов с высшим медицинским образованием.</p><a class="developers" href="#"></a>
+        </div>
+        <div class="right-block">
+          <div class="top-part">
+            <ul class="nav-list">
+              <li>Сепсис Форум</li>
+              <li><a href="">Мероприятия</a></li>
+              <li><a href="">Эксперты</a></li>
+              <li><a href="">Партнёры</a></li>
+              <li><a href="">Вакансии</a></li>
+            </ul>
+            <ul class="nav-list">
+              <li>Библиотека</li>
+              <li><a href="">Статьи</a></li>
+              <li><a href="">Случаи из практики</a></li>
+              <li><a href="">Видео</a></li>
+              <li><a href="">Архив документов</a></li>
+            </ul>
+            <ul class="nav-list">
+              <li>Консилиум</li>
+              <li><a href="">Вопросы и ответы</a></li>
+              <li><a href="">Опросы</a></li>
+            </ul>
+            <ul class="nav-list">
+              <li>Обучение</li>
+              <li><a href="">Вебинары</a></li>
+              <li><a href="">Курсы</a></li>
+              <li><a href="">Тесты</a></li>
+            </ul>
+          </div>
+          <div class="bottom-part">
+            <ul class="nav-list">
+              <li>Официально</li>
+              <li><a href="">О нас</a></li>
+              <li><a href="">Пользовательское соглашение</a></li>
+              <li><a href="">Политика конфиденциальности</a></li>
+            </ul>
+            <ul class="soc-list">
+              <li>Следите за нами в соцсетях</li>
+              <li> <a class="fb" href="#"></a><a class="ok" href="#"></a><a class="vk" href="#"></a><a class="mail" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade suggest" tabindex="-1" role="dialog" aria-hidden="true" id="offer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
