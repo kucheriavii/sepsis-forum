@@ -652,10 +652,6 @@
 			text-decoration: none;
 			padding-left: 14px;
 		}
-		.disabled-item{
-			opacity: .5;
-			cursor: pointer;
-		}
 		.active-item{
 			border: none;
 			background-color: #035899;
@@ -901,7 +897,20 @@
 		}
 	}
 }
-
+.disabled-item{
+  opacity: .5 !important;
+  cursor: not-allowed !important;
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
+}
 
 
 

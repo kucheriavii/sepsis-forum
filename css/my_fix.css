@@ -551,9 +551,6 @@
       display: block;
       text-decoration: none;
       padding-left: 14px; }
-    .toolbar .toolbar-list .disabled-item {
-      opacity: .5;
-      cursor: pointer; }
     .toolbar .toolbar-list .active-item {
       border: none;
       background-color: #035899; }
@@ -779,6 +776,19 @@
     color: #fff;
     opacity: 1;
     transition: all .3s ease-in-out; }
+
+.disabled-item {
+  opacity: .5 !important;
+  cursor: not-allowed !important;
+  position: relative; }
+  .disabled-item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999; }
 
 .form-section {
   position: relative;
