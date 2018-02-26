@@ -431,14 +431,16 @@
                         </a>
                     </div>
                     <span class="text-message">Показывать только с ответами</span>
+                    <span class="result-text">Найдено 60</span>
                 </div>
+
                   <a href="ARTICLES" data-action="SUBSCRIBTION" class="subscription__toggle js-toggle-subscription ">
                     <span class="subscription__toggle-item"></span>
                   </a>
               </div>
 
               <div class="button-block">
-                <a class="blue-button js-open-extended-search" href="#">Расширеный поиск</a>
+                <a class="blue-button js-open-extended-search opt-search" href="#">Расширеный поиск</a>
               </div>
             </div>
 
@@ -862,14 +864,14 @@
                         <form action="#">
                             <div class="form-section">
                                 <div class="form-select">
-                                    <select name="search_author" data-placeholder="Автор">
+                                    <select name="search_author" data-placeholder="Любому ТОП-эксперту РСФ">
                                         <option value=""></option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-section">
                                 <div class="form-select">
-                                    <select name="search_author" data-placeholder="Автор">
+                                    <select name="search_author" data-placeholder="Любая специализация">
                                         <option value=""></option>
                                     </select>
                                 </div>
@@ -897,6 +899,52 @@
                             <a href="#" class="blue-full-button ask-question_back-to-list">Вернуться к списку</a>
                         </div>
                     </div>
+                </div>
+            </div>
+          </div>
+        <div class="slide-box search_slide-box">
+            <div class="slide-box_wrapper question_slide-box_wrapper">
+                <a href="#" class="slide-box__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                        <path fill="#FFF" fill-rule="evenodd" d="M27.901 27.893A14.62 14.62 0 0 1 17.5 32.2c-3.927 0-7.62-1.528-10.396-4.304A14.605 14.605 0 0 1 2.8 17.5c0-3.928 1.53-7.62 4.306-10.396A14.612 14.612 0 0 1 17.503 2.8c3.927 0 7.62 1.528 10.397 4.304 5.733 5.732 5.733 15.057.001 20.79m1.981-22.77A17.393 17.393 0 0 0 17.504 0 17.384 17.384 0 0 0 5.128 5.124 17.379 17.379 0 0 0 0 17.5a17.373 17.373 0 0 0 5.125 12.376A17.384 17.384 0 0 0 17.501 35c4.677 0 9.074-1.82 12.383-5.127 6.822-6.823 6.821-17.925-.002-24.749m-9.308 7.21L17.5 15.408l-3.074-3.074a1.478 1.478 0 0 0-2.092 0 1.478 1.478 0 0 0 0 2.093l3.074 3.073-3.074 3.074A1.478 1.478 0 0 0 13.38 23.1c.379 0 .756-.145 1.046-.434l3.074-3.073 3.074 3.073a1.476 1.476 0 0 0 2.092 0 1.478 1.478 0 0 0 0-2.092L19.592 17.5l3.074-3.073a1.478 1.478 0 0 0 0-2.093 1.478 1.478 0 0 0-2.092 0z"></path>
+                    </svg>
+                </a>
+                <div class="slide-box__content">
+                    <div class="ask-question_title">
+                        <h2>Расширенный поиск</h2>
+                        <p>Уточните параметры с помощью фильтров. Можно выбрать один или несколько параметров.</p>
+                    </div>
+                    <form action="search">
+                        <input class="input-blue" type="text" name="name" placeholder="Введите ключевое слово">
+                        <input class="input-blue" type="text" name="name" placeholder="Фамилия и имя автора вопроса">
+                        <input class="input-blue" type="text" name="name" placeholder="Фамилия и имя эксперта">
+                        <input class="input-blue" type="text" name="name" placeholder="Любая специализацию">
+                        <div class="form-section">
+                            <div class="form-section__body">
+                                <div class="form-datepicker-group form-datepicker-group_style_1">
+                                    <div class="form-datepicker ">
+                                        <div class="form-datepicker__title">
+                                            Начальная дата
+                                        </div>
+                                        <div class="form-datepicker__body">
+                                            <div class="form-datepicker__date">											</div>
+                                        </div>
+                                        <input type="text" name="date-start" class="form-datepicker__control js-form-datepicker">
+                                    </div>
+                                    <div class="form-datepicker ">
+                                        <div class="form-datepicker__title">
+                                            Конечная
+                                        </div>
+                                        <div class="form-datepicker__body">
+                                            <div class="form-datepicker__date">										</div>
+                                            <input type="text" name="date-end" class="form-datepicker__control js-form-datepicker">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="blue-full-button find-opt-question-button">Задать</button>
+                    </form>
                 </div>
             </div>
           </div>

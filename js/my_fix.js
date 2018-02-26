@@ -29,6 +29,12 @@ $(function(){
         $('.slide-box').removeClass('slide-box-visible');
         $('.ask_slide-box').addClass('slide-box-visible');
     });
+    //result-the-question
+    $(document).on('click','.opt-search', function(e){
+        e.preventDefault();
+        $('.slide-box').removeClass('slide-box-visible');
+        $('.search_slide-box').addClass('slide-box-visible');
+    });
 
     //ask
     $(document).on('click','.ask-the-question-button', function(e){
