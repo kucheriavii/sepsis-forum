@@ -606,6 +606,214 @@
     margin-bottom: 144px;
   }
 }
+
+/*Исследования*/
+.research-section_wrap{
+  h2{
+    font-family: 'Merriweather-Regular', serif;
+  }
+  .item-block.size-md {
+    width: 1170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    margin-bottom: 50px;
+  }
+  .img-block {
+    width: 360px;
+    height: 240px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 0 45px 0 0;
+    img {
+      max-width: 100%;
+      transition: all .3s ease-in-out;
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+  }
+  .content-block {
+    width: calc(100% - 405px);
+    .name {
+      font-family: Merriweather-Regular, Serif;
+      object-fit: contain;
+      line-height: 1.38;
+      text-align: left;
+      font-size: 32px;
+      color: #000;
+    }
+    .short-text{
+      color: #000000;
+      line-height: 27px;
+      font-size: 18px;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 50px;
+    }
+  }
+  .info-block{
+    display: flex;
+    .final-date,.points-counter{
+      margin-right: 50px;
+      .date{
+        font-family: "Merriweather-Regular", serif;
+        line-height: 0.58;
+        font-size: 40px;
+        text-align: center;
+        color: #000;
+        display: block;
+      }
+      .text{
+        font-size: 12px;
+        line-height: 16px;
+        padding-top: 7px;
+        font-family: "PT_Sans-Web-Regular", sans-serif;
+        text-align: center;
+        display: block;
+        opacity: .5;
+        letter-spacing: normal;
+      }
+    }
+  }
+  .take-part_research{
+    width: 370px;
+    height: 55px;
+    line-height: 55px;
+    font-family: 'PT_Sans-Web-Regular', sans-serif;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    display: block;
+    background-color: #035899;
+    color: #fff;
+    &:visited{
+      color:#fff;
+    }
+    &:hover{
+      transition: all .3s ease-in-out;
+      background-color: transparent;
+      color: #035899;
+    }
+  }
+  .section-in-work{
+    width: 100%;
+    .in-work-item{
+      height: 105px;
+      border-top: 1px solid #e2e2e2;
+      line-height: 105px;
+      &:last-child{
+        border-bottom: 1px solid #e2e2e2;
+      }
+    }
+    .in-work-name-wrap{
+      width: 450px;
+      display: inline-block;
+    }
+    .in-work-name{
+      font-size: 20px;
+      display: inline-block;
+      line-height: 9px;
+      color: #000;
+      border-bottom: 8px solid rgb(194, 227, 243);
+      font-weight: bold;
+    }
+    .in-work-status{
+      font-size: 14px;
+      color: #035899;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  .button-wrap{
+    width: 100%;
+    color: #fff;
+    .continue_research{
+      display: block;
+      width: 370px;
+      height: 55px;
+      margin: 40px auto 120px;
+      display: block;
+      line-height: 55px;
+      font-family: 'PT_Sans-Web-Regular', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 16px;
+      letter-spacing: 0.9px;
+      &:visited{
+        color: #fff;
+      }
+      &:hover{
+        transition: all .3s ease-in-out;
+        background-color: transparent;
+        color: #035899;
+      }
+    }
+  }
+}
+/*research page*/
+.research-section_wrap{
+  .research-article{
+    text-align: center;
+    color: rgba(0,0,0,.5);
+    font-family: 'PT_Sans-Web-Regular', sans-serif;
+    font-size: 24px;
+    line-height: 31px;
+    margin-top: -60px;
+  }
+  .detail-research-article{
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.7px;
+    font-weight: bold;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 50px;
+  }
+  .info-research-article{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(216,216,216,.2);
+    padding: 30px;
+    .title-in-work{
+      text-transform: uppercase;
+      color: #000;
+      font-weight: bold;
+      div{
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .add_research_place{
+    display: block;
+    width: 320px;
+    height: 55px;
+    margin: 40px auto 120px;
+    display: block;
+    line-height: 55px;
+    font-family: 'PT_Sans-Web-Regular', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.9px;
+    &:visited{
+      color: #fff;
+    }
+    &:hover{
+      transition: all .3s ease-in-out;
+      background-color: transparent;
+      color: #035899;
+    }
+  }
+}
 //************основные стили (кнопки, инпуты и т.д.)
 .form-section{
 	width: 50%;
@@ -721,6 +929,15 @@
 }
 .blue-text{
 	color: rgba(3,88,153,1);
+}
+.black-text{
+  color:#000;
+}
+.gray-text{
+  color: rgba(0,0,0,.5) !important;
+}
+.green-text{
+  color: #27b003 !important;
 }
 .red_button{
 	display: inline-block;
@@ -1093,13 +1310,6 @@
   margin-top: -6.5px;
 }
 
-.ui-datepicker-prev .ui-icon {
-  background-image: url('../images/arrow-left.svg');
-}
-
-.ui-datepicker-next .ui-icon {
-  background-image: url('../images/arrow-right.svg');
-}
 
 .ui-datepicker th,
 .ui-datepicker td span,

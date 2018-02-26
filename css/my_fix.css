@@ -515,6 +515,187 @@
   text-transform: uppercase;
   margin-bottom: 144px; }
 
+/*Исследования*/
+.research-section_wrap h2 {
+  font-family: 'Merriweather-Regular', serif; }
+
+.research-section_wrap .item-block.size-md {
+  width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  margin-bottom: 50px; }
+
+.research-section_wrap .img-block {
+  width: 360px;
+  height: 240px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin: 0 45px 0 0; }
+  .research-section_wrap .img-block img {
+    max-width: 100%;
+    transition: all .3s ease-in-out; }
+    .research-section_wrap .img-block img:hover {
+      transform: scale(1.2); }
+
+.research-section_wrap .content-block {
+  width: calc(100% - 405px); }
+  .research-section_wrap .content-block .name {
+    font-family: Merriweather-Regular, Serif;
+    object-fit: contain;
+    line-height: 1.38;
+    text-align: left;
+    font-size: 32px;
+    color: #000; }
+  .research-section_wrap .content-block .short-text {
+    color: #000000;
+    line-height: 27px;
+    font-size: 18px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 50px; }
+
+.research-section_wrap .info-block {
+  display: flex; }
+  .research-section_wrap .info-block .final-date, .research-section_wrap .info-block .points-counter {
+    margin-right: 50px; }
+    .research-section_wrap .info-block .final-date .date, .research-section_wrap .info-block .points-counter .date {
+      font-family: "Merriweather-Regular", serif;
+      line-height: 0.58;
+      font-size: 40px;
+      text-align: center;
+      color: #000;
+      display: block; }
+    .research-section_wrap .info-block .final-date .text, .research-section_wrap .info-block .points-counter .text {
+      font-size: 12px;
+      line-height: 16px;
+      padding-top: 7px;
+      font-family: "PT_Sans-Web-Regular", sans-serif;
+      text-align: center;
+      display: block;
+      opacity: .5;
+      letter-spacing: normal; }
+
+.research-section_wrap .take-part_research {
+  width: 370px;
+  height: 55px;
+  line-height: 55px;
+  font-family: 'PT_Sans-Web-Regular', sans-serif;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  display: block;
+  background-color: #035899;
+  color: #fff; }
+  .research-section_wrap .take-part_research:visited {
+    color: #fff; }
+  .research-section_wrap .take-part_research:hover {
+    transition: all .3s ease-in-out;
+    background-color: transparent;
+    color: #035899; }
+
+.research-section_wrap .section-in-work {
+  width: 100%; }
+  .research-section_wrap .section-in-work .in-work-item {
+    height: 105px;
+    border-top: 1px solid #e2e2e2;
+    line-height: 105px; }
+    .research-section_wrap .section-in-work .in-work-item:last-child {
+      border-bottom: 1px solid #e2e2e2; }
+  .research-section_wrap .section-in-work .in-work-name-wrap {
+    width: 450px;
+    display: inline-block; }
+  .research-section_wrap .section-in-work .in-work-name {
+    font-size: 20px;
+    display: inline-block;
+    line-height: 9px;
+    color: #000;
+    border-bottom: 8px solid #c2e3f3;
+    font-weight: bold; }
+  .research-section_wrap .section-in-work .in-work-status {
+    font-size: 14px;
+    color: #035899;
+    font-weight: bold;
+    text-transform: uppercase; }
+
+.research-section_wrap .button-wrap {
+  width: 100%;
+  color: #fff; }
+  .research-section_wrap .button-wrap .continue_research {
+    display: block;
+    width: 370px;
+    height: 55px;
+    margin: 40px auto 120px;
+    display: block;
+    line-height: 55px;
+    font-family: 'PT_Sans-Web-Regular', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.9px; }
+    .research-section_wrap .button-wrap .continue_research:visited {
+      color: #fff; }
+    .research-section_wrap .button-wrap .continue_research:hover {
+      transition: all .3s ease-in-out;
+      background-color: transparent;
+      color: #035899; }
+
+/*research page*/
+.research-section_wrap .research-article {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'PT_Sans-Web-Regular', sans-serif;
+  font-size: 24px;
+  line-height: 31px;
+  margin-top: -60px; }
+
+.research-section_wrap .detail-research-article {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 50px; }
+
+.research-section_wrap .info-research-article {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(216, 216, 216, 0.2);
+  padding: 30px; }
+  .research-section_wrap .info-research-article .title-in-work {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold; }
+    .research-section_wrap .info-research-article .title-in-work div {
+      margin-bottom: 8px; }
+
+.research-section_wrap .add_research_place {
+  display: block;
+  width: 320px;
+  height: 55px;
+  margin: 40px auto 120px;
+  display: block;
+  line-height: 55px;
+  font-family: 'PT_Sans-Web-Regular', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.9px; }
+  .research-section_wrap .add_research_place:visited {
+    color: #fff; }
+  .research-section_wrap .add_research_place:hover {
+    transition: all .3s ease-in-out;
+    background-color: transparent;
+    color: #035899; }
+
 .form-section {
   width: 50%; }
 
@@ -613,6 +794,15 @@
 
 .blue-text {
   color: #035899; }
+
+.black-text {
+  color: #000; }
+
+.gray-text {
+  color: rgba(0, 0, 0, 0.5) !important; }
+
+.green-text {
+  color: #27b003 !important; }
 
 .red_button {
   display: inline-block;
@@ -942,12 +1132,6 @@
   width: 9px;
   margin-left: -4.5px;
   margin-top: -6.5px; }
-
-.ui-datepicker-prev .ui-icon {
-  background-image: url("../images/arrow-left.svg"); }
-
-.ui-datepicker-next .ui-icon {
-  background-image: url("../images/arrow-right.svg"); }
 
 .ui-datepicker th,
 .ui-datepicker td span,
