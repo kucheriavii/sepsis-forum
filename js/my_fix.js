@@ -18,8 +18,16 @@ $(function(){
         $(this).parents('.slide-box').removeClass('slide-box-visible');
     });
     //ask-the-question
-    $(document).on('click','.ask-the-question', function(e){
+    $(document).on('click','.answer_read-more', function(e){
         e.preventDefault();
+        $('.slide-box').removeClass('slide-box-visible');
         $('.question_slide-box').addClass('slide-box-visible');
     });
+    //result-the-question
+    $(document).on('click','.ask-the-question', function(e){
+        e.preventDefault();
+        $('.slide-box').removeClass('slide-box-visible');
+        $('.ask_slide-box').addClass('slide-box-visible');
+    });
 });
+
