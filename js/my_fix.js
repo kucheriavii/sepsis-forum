@@ -29,5 +29,17 @@ $(function(){
         $('.slide-box').removeClass('slide-box-visible');
         $('.ask_slide-box').addClass('slide-box-visible');
     });
+
+    //ask
+    $(document).on('click','.ask-the-question-button', function(e){
+        e.preventDefault();
+        $('.slide-box__content_ok').css('display','block');
+    });
+
+    //ask
+    $(document).on('click','.ask-question_back-to-list', function(e){
+        e.preventDefault();
+        $('.slide-box__content_ok').css('display','none');
+    });
 });
 
