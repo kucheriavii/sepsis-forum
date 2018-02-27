@@ -47,5 +47,59 @@ $(function(){
         e.preventDefault();
         $('.slide-box__content_ok').css('display','none');
     });
+
+    //delete person (research)
+    $(document).on('click','.delete-person', function(e){
+        e.preventDefault();
+        $(this).parents('.invited-person').remove();
+        if($('.invited-person').length==0){
+            $('.header-invited-persons').text('Вы пока никого не пригласили!');
+        }
+    });
+    //show patients (research)
+    $(document).on('click','.location-show-more', function(e){
+        e.preventDefault();
+        if(!$(this).parents('.info-research-article').hasClass('checked')){
+            $('.info-research-article').removeClass('checked');
+            $('.location-patients').slideUp();
+            $(this).parents('.info-research-article').addClass('checked');
+            $(this).parents('.info-research-article').find('.location-patients').slideDown();
+        } else{
+            $(this).parents('.info-research-article').removeClass('checked');
+            $(this).parents('.info-research-article').find('.location-patients').slideUp();
+        }
+
+    });
+    //show etaps (research)
+    $(document).on('click','.patient-show-more', function(e){
+        e.preventDefault();
+        if(!$(this).parents('.patient').hasClass('checked')){
+            $('.patient').removeClass('checked');
+            $('.location-etaps').slideUp();
+            $(this).parents('.patient').addClass('checked');
+            $(this).parents('.patient').find('.location-etaps').slideDown();
+        } else{
+            $(this).parents('.patient').removeClass('checked');
+            $(this).parents('.patient').find('.location-etaps').slideUp();
+        }
+
+    });
+
+    $(document).on('click','.patient:first-child .patient-show-more', function(){
+        $('.patients-top-menu').css('border','none');
+    })
+
+    $(document).on('click','.hideLocation', function(e){
+        e.preventDefault();
+        $(this).parents('.info-research-article').removeClass('checked');
+        $(this).parents('.info-research-article').find('.location-patients').slideUp();
+    });
+    $(document).on('click','.hidePatient', function(e){
+        e.preventDefault();
+        $(this).parents('.patient').removeClass('checked');
+        $(this).parents('.patient').find('.location-etaps').slideUp();
+    });
+
+
 });
 
