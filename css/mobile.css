@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+  .tablet header .container nav .nav-block a.logotype {
+    max-width: 124px;
+    background-size: 80%;
+    max-height: 73px; }
+  .tablet header .container nav .nav-block a.pacient {
+    max-width: 110px;
+    max-height: 73px; }
+  .tablet header .container nav .nav-block > div.specialist-nav {
+    max-width: 130px;
+    max-height: 73px; }
+  .tablet header .container nav .nav-block > div.search-nav {
+    max-width: 63px;
+    max-height: 73px; }
+  .tablet header .container nav .nav-block > div.language-nav {
+    max-width: 63px;
+    max-height: 73px; }
+  .tablet header .container nav .authorization-block {
+    max-height: 73px; } }
+
+@media screen and (min-width: 769px) {
+  /* STYLES HERE */ }
