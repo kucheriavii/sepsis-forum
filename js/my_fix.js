@@ -87,7 +87,13 @@ $(function(){
 
     $(document).on('click','.patient:first-child .patient-show-more', function(){
         $('.patients-top-menu').css('border','none');
-    })
+    });
+
+    $(document).on('click','.add-new-etap-button', function(e){
+        e.preventDefault();
+        $(this).parent().css('display','none');
+        $('.add-new-etap-wrapper').slideDown();
+    });
 
     $(document).on('click','.hideLocation', function(e){
         e.preventDefault();

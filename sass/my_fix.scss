@@ -1164,10 +1164,83 @@
 	}
 }
 .add-new-etap-wrapper{
-	position: relative;
+	width: 100%;
+	display: none;
 	.new-etap-form{
-		position: absolute;
+		box-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc;
+		padding: 50px;
+		//margin-top: 40px;
 
+	}
+	.new-etap-title{
+		font-size: 32px;
+		line-height: 44px;
+		color: #000;
+		font-family: "Merriweather-Regular", serif;
+	}
+	.new-etap-name{
+		margin-top: 16px;
+		font-family: "PT_Sans-Web-Regular", sans-serif;
+		font-size: 20px;
+		line-height: 27px;
+
+	}
+	input[type='text']{
+		width: 439px;
+		height: 70px;
+		line-height: 70px;
+		font-size: 20px;
+		display: inline-block;
+		&::placeholder{
+			color: rgba(0,0,0,.4);
+		}
+	}
+	.nomer-reserch{
+		margin-top: 30px;
+	}
+	.new-etap-section{
+		margin-top: 70px;
+		font-family: "PT_Sans-Web-Regular", sans-serif;
+		font-size: 20px;
+		line-height: 27px;
+	}
+	.LPY-check{
+		display: block;
+	}
+	label.label-lpu{
+		display: block;
+		margin-top: 40px;
+		cursor: pointer;
+	}
+	.etap-check{
+		display: none;
+	}
+	.etap-check+span{
+		background: url("../images/checked.svg") no-repeat;
+		padding-left: 30px;
+		display: block;
+	}
+	.etap-check:checked+span{
+		background: url("../images/checked1.svg") no-repeat;
+		background-position: 5px center;
+	}
+	.button-wrapper{
+		display: flex;
+		margin-top: 45px;
+		justify-content: space-between;
+		.red_button,.blue-full-button{
+			width: 175px;
+			height: 45px;
+			line-height: 45px;
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			min-width: auto;
+			font-size: 14px;
+			text-transform: uppercase;
+			font-family: "PT_Sans-Web-Regular", sans-serif;
+			font-weight: bold;
+		}
 	}
 }
 //************основные стили (кнопки, инпуты и т.д.)
