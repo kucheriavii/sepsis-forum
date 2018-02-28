@@ -519,6 +519,9 @@
 .research-section_wrap h2 {
   font-family: 'Merriweather-Regular', serif; }
 
+.research-section_wrap .container .content-block_wrap .articles-item_block {
+  flex-wrap: wrap; }
+
 .research-section_wrap .item-block.size-md {
   width: 1170px;
   display: -webkit-box;
@@ -601,6 +604,7 @@
     color: #035899; }
 
 .research-section_wrap .section-in-work {
+  margin-top: 50px;
   width: 100%; }
   .research-section_wrap .section-in-work .in-work-item {
     height: 105px;

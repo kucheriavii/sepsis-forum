@@ -612,6 +612,9 @@
   h2{
     font-family: 'Merriweather-Regular', serif;
   }
+  .container .content-block_wrap .articles-item_block{
+	  flex-wrap: wrap;
+  }
   .item-block.size-md {
     width: 1170px;
     display: -webkit-box;
@@ -703,6 +706,7 @@
     }
   }
   .section-in-work{
+	  margin-top: 50px;
     width: 100%;
     .in-work-item{
       height: 105px;
