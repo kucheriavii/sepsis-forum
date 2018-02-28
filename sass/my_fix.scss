@@ -847,6 +847,7 @@
 	  margin: 0 auto;
 	  display: block;
 	  margin-top: -80px;
+	  display: none;
 
   }
 }
@@ -1174,6 +1175,7 @@
 	.new-etap-form{
 		box-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc;
 		padding: 50px;
+		margin-bottom: 20px;
 		//margin-top: 40px;
 
 	}
@@ -1226,8 +1228,8 @@
 		display: block;
 	}
 	.etap-check:checked+span{
-		background: url("../images/checked1.svg") no-repeat;
-		background-position: 5px center;
+		background: url("../images/checkedOk.svg") no-repeat;
+		background-position: 0px center;
 	}
 	.button-wrapper{
 		display: flex;
@@ -1247,6 +1249,9 @@
 			font-weight: bold;
 		}
 	}
+}
+.new-etap-form .hideEtap{
+	bottom: -65px;
 }
 //************основные стили (кнопки, инпуты и т.д.)
 .form-section{

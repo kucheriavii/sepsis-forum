@@ -93,12 +93,14 @@ $(function(){
         e.preventDefault();
         $(this).css('display','none');
         $('.new-research-place').fadeIn();
+        $('.cancel_research_place').css('display','block');
     });
     $(document).on('click','.cancel_research_place', function(e){
         e.preventDefault();
         $('.add_research_place').css('display','block');
         $('.new-research-place').fadeOut();
         $(document).scrollTop(0);
+        $(this).css('display','none');
     });
 
     $(document).on('click','.add-new-etap-button', function(e){
@@ -116,6 +118,11 @@ $(function(){
         e.preventDefault();
         $(this).parents('.patient').removeClass('checked');
         $(this).parents('.patient').find('.location-etaps').slideUp();
+    });
+    $(document).on('click','.hideEtap', function(e){
+        e.preventDefault();
+        $(this).parents('.add-new-etap-wrapper').slideUp();
+        $('.new-etap-button-block').css('display','flex');
     });
 
 

@@ -13,7 +13,7 @@
    viewBox="0 0 20 20"
    version="1.1"
    id="svg34"
-   sodipodi:docname="checked.svg"
+   sodipodi:docname="checkedOk.svg"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
   <metadata
      id="metadata38">
@@ -23,6 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

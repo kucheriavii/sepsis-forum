@@ -725,7 +725,8 @@
   text-align: center;
   margin: 0 auto;
   display: block;
-  margin-top: -80px; }
+  margin-top: -80px;
+  display: none; }
 
 .container .location-table {
   background-color: #fff;
@@ -998,7 +999,8 @@
   display: none; }
   .add-new-etap-wrapper .new-etap-form {
     box-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc;
-    padding: 50px; }
+    padding: 50px;
+    margin-bottom: 20px; }
   .add-new-etap-wrapper .new-etap-title {
     font-size: 32px;
     line-height: 44px;
@@ -1037,8 +1039,8 @@
     padding-left: 30px;
     display: block; }
   .add-new-etap-wrapper .etap-check:checked + span {
-    background: url("../images/checked1.svg") no-repeat;
-    background-position: 5px center; }
+    background: url("../images/checkedOk.svg") no-repeat;
+    background-position: 0px center; }
   .add-new-etap-wrapper .button-wrapper {
     display: flex;
     margin-top: 45px;
@@ -1055,6 +1057,9 @@
       text-transform: uppercase;
       font-family: "PT_Sans-Web-Regular", sans-serif;
       font-weight: bold; }
+
+.new-etap-form .hideEtap {
+  bottom: -65px; }
 
 .form-section {
   width: 50%; }
