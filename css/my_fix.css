@@ -77,7 +77,8 @@
       transition: all 1.3s; }
   .arch-article-wrapper .article__body {
     padding: 25px;
-    background-color: #f7f7f7; }
+    background-color: #f7f7f7;
+    width: 100%; }
     .arch-article-wrapper .article__body .article__categories-link {
       font-size: 16px;
       color: #035599;
