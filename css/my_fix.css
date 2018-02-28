@@ -759,6 +759,7 @@
     border-bottom: none; }
 
 .new-research-place {
+  display: none;
   margin: 90px 50px; }
   .new-research-place .title-wrap {
     margin-bottom: 50px; }

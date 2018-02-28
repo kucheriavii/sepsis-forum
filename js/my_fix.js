@@ -88,6 +88,18 @@ $(function(){
     $(document).on('click','.patient:first-child .patient-show-more', function(){
         $('.patients-top-menu').css('border','none');
     });
+    //добавить локацию
+    $(document).on('click','.add_research_place', function(e){
+        e.preventDefault();
+        $(this).css('display','none');
+        $('.new-research-place').fadeIn();
+    });
+    $(document).on('click','.cancel_research_place', function(e){
+        e.preventDefault();
+        $('.add_research_place').css('display','block');
+        $('.new-research-place').fadeOut();
+        $(document).scrollTop(0);
+    });
 
     $(document).on('click','.add-new-etap-button', function(e){
         e.preventDefault();
