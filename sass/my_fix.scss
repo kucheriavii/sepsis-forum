@@ -1124,7 +1124,8 @@ section.articles-section_wrap.research-section_wrap {
 	display: flex;
 	justify-content: center;
 	position: relative;
-	min-width: 1px;
+	width: 100%;
+	min-width: 20px;
 	.slideUpLink{
 		display: block;
 		position: absolute;
