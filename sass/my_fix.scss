@@ -1125,7 +1125,7 @@ section.articles-section_wrap.research-section_wrap {
 	justify-content: center;
 	position: relative;
 	width: 100%;
-	min-width: 20px;
+	min-width: 40px;
 	.slideUpLink{
 		display: block;
 		position: absolute;
@@ -1135,6 +1135,8 @@ section.articles-section_wrap.research-section_wrap {
 		bottom: -50px;
 		border-radius: 50%;
 		box-shadow: 1px 1px #ccc, -1px -1px 1px #ccc;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	.slideUp{
 		transform: rotate(270deg);
