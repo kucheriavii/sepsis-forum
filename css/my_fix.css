@@ -363,7 +363,8 @@
 section.articles-section_wrap.research-section_wrap {
   margin-bottom: 100px; }
   section.articles-section_wrap.research-section_wrap .add_research_place {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    overflow: hidden; }
 
 .question-section-wrap .slide-box .question_slide-box_wrapper {
   height: auto; }
