@@ -320,7 +320,18 @@ function sliders() {
   if ($('.slider-block').length > 0) {
     $('.slider-block').slick({
       dots: true,
-      arrows: false
+      arrows: false,
+      responsive: [
+          {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false
+              }
+          }
+      ]
     });
   }
   if ($('.opinion-slider_block').length > 0) {
@@ -336,14 +347,14 @@ function sliders() {
       cssEase: 'linear'
     });
   }
-  if ($('.video-slider_block').length > 0) {
+  /*if ($('.video-slider_block').length > 0) {
     $('.video-slider_block').slick({
       centerMode: true,
       slidesToShow: 1,
       dots: true,
       variableWidth: true
     });
-  }
+  }*/
   $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

@@ -1,30 +1,219 @@
-@media screen and (max-width: 768px){
-  .tablet{
-    header .container nav .nav-block a.logotype{
-      max-width: 124px;
-      background-size: 80%;
+/*Если вы читаете этот комментарий то я вам категорически сУчуствую. Эти стили используются для адаптации
+готового макета под таблетки и мобильные устройства. Все строки где присутствует TODO:подлежать дальнейшей доработке*/
+
+@media screen and (max-width: 1200px){
+  /**Стили для маленьких дисплеев***/
+  .answer{
+    width: 98%;
+    margin-left: 1%;
+  }
+}
+@media screen and (max-width: 980px){
+  /*Стили для планшета*/
+  /*адаптив щапки для планшета*/
+  #tablet{
+    /*Шапка для планшета*/
+    nav{
+      font-size: 16px;
+      max-height: 73px;
+
+    }
+    .nav-block{
       max-height: 73px;
     }
-    header .container nav .nav-block a.pacient{
+    a.logotype{
+      max-width: 124px;
+      background-size: 60%;
+      max-height: 73px;
+      font-size: 16px;
+      text-align: center;
+    }
+    a.pacient{
       max-width: 110px;
       max-height: 73px;
+      line-height: 73px;
+      font-size: 16px;
+      text-align: center;
     }
-    header .container nav .nav-block>div.specialist-nav{
+    .nav-block>div.specialist-nav{
       max-width: 130px;
       max-height: 73px;
+      .specialist{
+        line-height: 73px;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+      }
     }
-    header .container nav .nav-block>div.search-nav{
+    .nav-block>div.search-nav{
       max-width: 63px;
       max-height: 73px;
+      .search{
+        background-size: 19px;
+        background-position: center;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
     }
-    header .container nav .nav-block>div.language-nav{
+    .nav-block>div.language-nav{
       max-width: 63px;
       max-height: 73px;
+      a.language{
+        line-height: 73px;
+        font-size: 16px;
+        text-align: center;
+      }
     }
-    header .container nav .authorization-block{
+    .authorization-block{
       max-height: 73px;
+      line-height: 73px;
+      .login-nav{
+        max-height: 73px;
+      }
+      .login{
+        line-height: 73px;
+        font-size: 16px;
+        text-align: center;
+        &:after{
+          height: 14px;
+          background-size: contain;
+        }
+      }
+      .registration-nav{
+        max-height: 73px;
+      }
+      .registration{
+        line-height: 73px;
+        font-size: 16px;
+        text-align: center;
+      }
     }
+    .preview-section_wrap{
+      margin-bottom: 0;
+    }
+    .preview-section_wrap:after{
+      background: none;
+    }
+    /*Контейнер для планшета*/
+    .content-block_wrap{
+      padding-left: 20px;
+      padding-right: 20px;
+      h2{
+        font-size: 39px;
+        &:before{
+          height: 43%;
+        }
+      }
+      .lined-title{
+        margin-bottom: 40px;
+      }
+    }
+    .sidebar-block_wrap{
+      display: none;
+    }
+
+    .content-block_wrap{
+      max-width: 100%;
+    }
+
+    /*Новостная секция на главной*/
+    .news-block_wrap{
+      display: block;
+      .right-side{
+        display: none;
+      }
+      .left-side{
+        width: 100%;
+        display: block;
+        overflow: auto;
+        .news-block{
+          margin-right: 10px;
+          width: 260px;
+          border: 1px solid #dcdcdc;
+          box-shadow: none;
+          .content-wrap{
+            height: auto;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+          .top-part{
+            font-size: 12px;
+          }
+          .middle-part{
+            font-size: 17px;
+            color: #000;
+            height: 140px;
+          }
+          .preview-section_wrap:after{
+            width: 53px;
+          }
+        }
+        .img-wrap{
+          width: 100%;
+          height: 202px;
+          overflow: hidden;
+          img{
+            transform: scale(1.2);
+          }
+        }
+        .line{
+          width: 10px;
+        }
+
+      }
+    }
+
+    .slider-block{
+      width: 100%;
+      margin-top: 50px;
+      .slider-item{
+        background: #abc2d6;
+        position: relative;
+        height: 83px;
+        z-index: 1;
+        img{
+          float: right;
+          height: 83px;
+          width: auto;
+          position: absolute;
+          opacity: 1;
+          z-index: 0;
+          right: 0;
+        }
+        p{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-family: PT_Sans-Web-Regular, sans-serif;
+          font-size: 24px;
+          line-height: 32px;
+          color: #fff;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .slick-dots{
+        display: none;
+      }
+
+
+
+    }
+    /*video-section at the main*/
+    .video-section_wrap{
+      .slider-item{}
+      .slider-item.slick-center{
+        transform: none;
+      }
+    }
+    /*end of #tablet*/
   }
+  /*end of @media(tablet)*/
 }
 @media screen and (min-width: 769px) {
   /* STYLES HERE */
