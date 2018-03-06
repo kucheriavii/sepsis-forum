@@ -434,8 +434,15 @@
 		margin-top: 40px;
 	}
 }
+
 .articles-section_wrap h5{
 	margin-bottom: 40px;
+}
+section.articles-section_wrap.research-section_wrap {
+	margin-bottom: 100px;
+	.add_research_place{
+		margin-bottom: 0;
+	}
 }
 .question-section-wrap .slide-box .question_slide-box_wrapper{
 	height: auto;
@@ -1116,6 +1123,7 @@
 	display: flex;
 	justify-content: center;
 	position: relative;
+	min-width: 1px;
 	.slideUpLink{
 		display: block;
 		position: absolute;
