@@ -6,8 +6,15 @@ $(function(){
     mainNewsAdaptive(); /*Делаю с двух колонок единую*/
     $(window).resize(detectWidth); /*если таблет вешаю id=tablet*/
     //сюда запилить функцию которая будет перезагружать страницу, если меняется вид (таблетка/мобильник)
-
+    $(".events-list").mCustomScrollbar('destroy');
 });
+
+
+
+
+
+
+
 //проверка ширины дисплея. Возвращает 1 если планшет. 0 - если не планшет
 var isDisplayTablet = function(){
     var WindowsWidth = $(window).width();

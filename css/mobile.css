@@ -156,8 +156,109 @@
           text-align: center; }
       #tablet .slider-block .slick-dots {
         display: none; }
-    #tablet .video-section_wrap .slider-item.slick-center {
-      transform: none; }
+    #tablet .video-section_wrap {
+      overflow: hidden; }
+      #tablet .video-section_wrap .video-slider_block {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto; }
+      #tablet .video-section_wrap .slider-item {
+        width: 236px;
+        overflow: hidden;
+        margin-left: 10px;
+        opacity: 1;
+        height: 300px; }
+        #tablet .video-section_wrap .slider-item:first-child {
+          margin-left: 0; }
+        #tablet .video-section_wrap .slider-item .img-block {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: auto;
+          overflow: hidden; }
+      #tablet .video-section_wrap .slider-item.slick-center {
+        transform: none; }
+      #tablet .video-section_wrap .content-block {
+        opacity: 1;
+        padding: 0;
+        padding-top: 21px;
+        padding-left: 20px;
+        height: 100%; }
+        #tablet .video-section_wrap .content-block .middle-part {
+          overflow: hidden;
+          height: 120px;
+          font-family: Merriweather-Regular;
+          font-size: 14.4px;
+          line-height: 1.40;
+          text-align: left;
+          color: #000;
+          bottom: 30px;
+          position: absolute;
+          margin-bottom: 5px;
+          padding: 0;
+          margin-left: 0;
+          margin-right: 0;
+          left: 0;
+          right: 0; }
+        #tablet .video-section_wrap .content-block .bottom-part {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          left: 0;
+          justify-content: left; }
+          #tablet .video-section_wrap .content-block .bottom-part .comment, #tablet .video-section_wrap .content-block .bottom-part .like, #tablet .video-section_wrap .content-block .bottom-part .line, #tablet .video-section_wrap .content-block .bottom-part .date {
+            font-size: 13px;
+            color: #000;
+            padding-left: 18px;
+            opacity: .6; }
+          #tablet .video-section_wrap .content-block .bottom-part .line {
+            display: none; }
+          #tablet .video-section_wrap .content-block .bottom-part .comment {
+            margin-right: 5px; }
+            #tablet .video-section_wrap .content-block .bottom-part .comment:before {
+              background-image: url("../images/comment.svg");
+              width: 15px;
+              height: 14px; }
+          #tablet .video-section_wrap .content-block .bottom-part .like:before {
+            background-image: url("../images/heart.svg");
+            width: 15px;
+            height: 13px; }
+      #tablet .video-section_wrap .slick-list {
+        margin-bottom: 50px; }
+      #tablet .video-section_wrap .slick-dots {
+        left: 50%;
+        position: absolute;
+        bottom: -20px;
+        transform: translateX(-50%); }
+    #tablet .btn_wrap.lg-btn:after {
+      display: none; }
+    #tablet .events-section_wrap .events-block_wrap {
+      margin-top: 48px; }
+    #tablet .events-section_wrap .events-list li {
+      width: 260px;
+      margin-right: 15px; }
+    #tablet .events-section_wrap .events-section_wrap .filter-block_wrap {
+      position: absolute;
+      top: 83px;
+      right: 43px; }
+    #tablet .events-section_wrap .content-wrap .text {
+      height: 100px; }
+    #tablet .events-section_wrap .events-block_wrap:after {
+      background-image: none; }
+    #tablet .banner-block_wrap {
+      height: 217px;
+      margin: 0 -20px;
+      width: auto; }
+      #tablet .banner-block_wrap .close-btn {
+        right: 50%;
+        top: 0;
+        transform: translate(50%, -50%); }
+      #tablet .banner-block_wrap .text {
+        width: 380px;
+        font-size: 15px;
+        margin-left: 30px; }
   /*end of @media(tablet)*/ }
 
 @media screen and (min-width: 769px) {
