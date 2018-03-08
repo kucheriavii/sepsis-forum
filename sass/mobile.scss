@@ -306,9 +306,19 @@
       .events-block_wrap{
         margin-top: 48px;
       }
+      .events-list{
+        height: 555px;
+        overflow-y: hidden;
+      }
       .events-list li{
-        width: 260px;
+        //width: 260px;
         margin-right: 15px;
+        box-shadow: none;
+        border: 1px solid #e7f4fb;
+        height: 100%;
+        .content-wrap{
+          height: 100%;
+        }
       }
       .events-section_wrap .filter-block_wrap {
         position: absolute;
@@ -424,7 +434,17 @@
         }
       }
     }
-
+    .opinion-section_wrap{
+      .btn{
+        width: 230px;
+        height: 58px;
+        line-height: 58px;
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
     .discussion-block_wrap{
       .discussion-block{
         width: 260px;
@@ -499,6 +519,55 @@
         top: 50%;
         /* left: 50%; */
         transform: translateY(-50%);
+      }
+    }
+    footer{
+      height: auto;
+    }
+    footer .container{
+      display: block;
+      .right-block{
+        width: 100%;
+        margin: 0;
+        .top-part{
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          margin: 0;
+          padding: 0 20px 50px;
+        }
+        .nav-list{
+          width: 45%;
+        }
+        .bottom-part{
+          margin-top: 30px;
+          padding: 0 20px;
+        }
+      }
+      .footerBottom{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        a.logotype{
+          max-width: 175px;
+          background-size: 100%;
+          max-height: 106px;
+          font-size: 16px;
+          text-align: center;
+        }
+        .bottom-right-column{
+          max-width: 300px;
+          margin-right: 74px;
+          p{
+            padding-bottom: 11px;
+            margin-bottom: 0;
+            &:last-of-type{
+              margin-bottom: 15px;
+            }
+          }
+        }
       }
     }
     /*end of #tablet*/
