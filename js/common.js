@@ -320,17 +320,7 @@ function sliders() {
   if ($('.slider-block').length > 0) {
     $('.slider-block').slick({
       dots: true,
-      arrows: false,
-      responsive: [
-          {
-              breakpoint: 1024,
-              settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  dots: false
-              }
-          }
-      ]
+      arrows: false
     });
   }
   if ($('.opinion-slider_block').length > 0) {
