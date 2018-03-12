@@ -305,7 +305,9 @@
           height: 232px; }
           #tablet .consultation-section_wrap .consultation-block_wrap .consultation-block:last-of-type, #mobile .consultation-section_wrap .consultation-block_wrap .consultation-block:last-of-type {
             height: 273px;
-            top: 202px; }
+            top: 202px;
+            margin-left: -20px;
+            padding-left: 20px; }
         #tablet .consultation-section_wrap .consultation-block_wrap .btn, #mobile .consultation-section_wrap .consultation-block_wrap .btn {
           bottom: -30px;
           width: 262px;
@@ -379,6 +381,8 @@
     #tablet .partners-block_wrap, #mobile .partners-block_wrap {
       display: flex;
       flex-wrap: wrap; }
+      #tablet .partners-block_wrap .lined-title, #mobile .partners-block_wrap .lined-title {
+        margin-left: 20px; }
       #tablet .partners-block_wrap .partner-wrap, #mobile .partners-block_wrap .partner-wrap {
         width: 32%;
         overflow: hidden;
@@ -437,7 +441,57 @@
             margin-bottom: 0; }
             #tablet footer .container .footerBottom .bottom-right-column p:last-of-type, #mobile footer .container .footerBottom .bottom-right-column p:last-of-type {
               margin-bottom: 15px; }
-  /*end of @media(tablet)*/ }
+    #tablet .registration-block_wrap .right-side, #mobile .registration-block_wrap .right-side {
+      max-width: 321px;
+      padding: 0;
+      margin: 0; }
+      #tablet .registration-block_wrap .right-side .nav-list, #mobile .registration-block_wrap .right-side .nav-list {
+        margin: 0 30px; }
+      #tablet .registration-block_wrap .right-side .form-send .form-field input:not([type=file]), #mobile .registration-block_wrap .right-side .form-send .form-field input:not([type=file]) {
+        width: 100%;
+        height: 52px;
+        font-size: 14px; }
+    #tablet .registration-block_wrap .nav-block_wrap .nav-list li:not(:last-child):before, #mobile .registration-block_wrap .nav-block_wrap .nav-list li:not(:last-child):before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 12px;
+      left: 26px;
+      width: 53px;
+      height: 2px;
+      background: #fff; }
+    #tablet .registration-block_wrap .first-step_wrap, #mobile .registration-block_wrap .first-step_wrap {
+      width: 100%; }
+      #tablet .registration-block_wrap .first-step_wrap h3, #mobile .registration-block_wrap .first-step_wrap h3 {
+        font-size: 24px; }
+    #tablet .registration-block_wrap .form-send .form-field .placeholder, #mobile .registration-block_wrap .form-send .form-field .placeholder {
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      left: 25px;
+      font-family: PT_Sans-Web-Regular;
+      font-size: 14px;
+      text-align: left;
+      color: #abd8ef;
+      transition: all .3s ease-in-out; }
+    #tablet .registration-block_wrap .header-popup_wrap.open, #mobile .registration-block_wrap .header-popup_wrap.open {
+      overflow: hidden !important;
+      width: 300px; }
+    #tablet .registration-block_wrap .form-send .form-field.focus .placeholder, #mobile .registration-block_wrap .form-send .form-field.focus .placeholder {
+      position: absolute;
+      z-index: 1;
+      top: 5px;
+      left: 25px;
+      font-family: PT_Sans-Web-Regular;
+      font-size: 14px;
+      text-align: left;
+      color: #abd8ef;
+      transition: all .3s ease-in-out; }
+    #tablet header .header-popup_wrap.open, #mobile header .header-popup_wrap.open {
+      overflow-x: hidden; }
+  /*end of @media(tablet)*/
+  body.menu_open header, body.menu_open {
+    padding-right: 0; } }
 
 @media screen and (max-width: 767px) {
   /*стили для мобильника*/
@@ -619,11 +673,10 @@
       margin-left: 20px; }
     #mobile .partners-section_wrap {
       overflow: hidden; }
+      #mobile .partners-section_wrap .lined-title {
+        margin-left: 20px; }
     #mobile .partners-block_wrap {
       max-width: 100%; }
-      #mobile .partners-block_wrap .lined-title {
-        margin-left: 20px;
-        margin-right: 20px; }
       #mobile .partners-block_wrap .partner-wrap {
         overflow: hidden;
         height: 87px;
