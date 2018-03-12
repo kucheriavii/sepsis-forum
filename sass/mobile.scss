@@ -751,11 +751,44 @@
       }
     }
     .opinion-section_wrap{
-      display: none;
+      padding: 0;
+      h2{
+        padding: 0;
+      }
+      .lined-title{
+        margin-left: 15px;
+        margin-right: 15px;
+      }
       .opinion-slider_block{
-        padding-left: 20px;
+        padding-left: 0px;
         .slider-item{
           display: block;
+          width: 260px;
+          margin-right: 30px;
+          .left-part{
+            margin-left: 20px;
+          }
+          .right-part{
+            margin-top: 20px;
+            width: 100%;
+            margin-left: 20px;
+            .text{
+              margin-top: 45px;
+              font-size: 21px;
+              line-height: 31px;
+              &:before{
+                width: 66px;
+                height: 48px;
+                left: -18px;
+              }
+              &:after{
+                display: none;
+              }
+            }
+            .disc{
+              width: 100%;
+            }
+          }
           .img-block{
             width: 217px;
             height: 217px;
@@ -767,11 +800,77 @@
         }
       }
       .btn_wrap.lg-btn{
-        display: none;
+        display: block;
+        max-width: 100%;
+        width: 230px;
+        height: 58px;
       }
     }
-    #section06,#section07, #section08{
-      display: none;}
+    .discussion-section_wrap{
+      padding-left: 20px;
+    }
+    .about-section_wrap{
+      .lined-title{
+        margin-left: 20px;
+      }
+    }
+    .partners-section_wrap{
+      overflow: hidden;
+    }
+    .partners-block_wrap{
+      max-width: 100%;
+      .lined-title{
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .partner-wrap {
+        overflow: hidden;
+        height: 87px;
+        margin-bottom: 50px;
+        margin-right: 2%;
+        width: 46%;
+        margin-left: 2%;
+      }
+    }
+    footer {
+      background-size: auto;
+      background-repeat: repeat-y;
+      .container .right-block {
+        .nav-list{
+          width: 100%;
+          margin-bottom: 50px;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+        .top-part {
+          display: block;
+          padding-right: 0;
+        }
+        .bottom-part{
+          display: block;
+          padding-right: 0;
+          margin-top: 0;
+        }
+      }
+      .container .footerBottom{
+        display: block;
+        .logo-block{
+          margin: 0;
+          padding: 0;
+          width: 100%;
+        }
+        .logotype{
+          margin: 0 auto;
+        }
+        .bottom-right-column {
+          max-width: 100%;
+          margin-right: 20px;
+          margin-left: 20px;
+          margin-top: 30px;
+        }
+      }
+    }
     .events-section_wrap .events-block_wrap:after {
       display: none;
     }
@@ -794,6 +893,17 @@
           display: none;
         }
       }
+    }
+  }
+  #mobile .opinion-section_wrap h2{
+    font-size: 30px;
+  }
+  #mobile .lined-title h2{
+    text-decoration: underline;
+    text-decoration-color: #d0e9f7;
+    font-size: 32px;
+    &:before{
+      display: none;
     }
   }
 }

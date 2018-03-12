@@ -2,6 +2,7 @@
 готового макета под таблетки и мобильные устройства. Все строки где присутствует TODO:подлежать дальнейшей доработке*/
 
 $(function(){
+    startWindowsWidth = $(window).width();
     detectWidth();
     mainNewsAdaptive(); /*Делаю с двух колонок единую*/
     mobileRebild(); //Ребилд секции Консилиум
@@ -13,9 +14,8 @@ $(function(){
     $(".events-block_wrap").mCustomScrollbar('destroy');
 
     tabletSliders(); //пересобираю слайдеры для адаптивной верстки
-
     /*Перезагрузка страници при изменении вида*/
-    startWindowsWidth = $(window).width();
+
     $(window).resize(reloadWhenChangeViews);
 
 
@@ -85,7 +85,7 @@ var mainNewsAdaptive = function () {
 
 /*Скрипт, который на главной странице вырезает всех партнеров и бросает их в один контейнер*/
 var mainPartnersAdaptive = function () {
-    if(isDisplayTablet()) {
+    if(isDisplayTablet()||isDisplayMobile()) {
         var partnersLogos = $('.partners-section_wrap .partners-block_wrap img');
         partnersLogos.insertBefore('.partners-block_wrap .partners-line:first-child');
         partnersLogos.wrap('<div class="partner-wrap"></div>')
@@ -96,7 +96,7 @@ var mainPartnersAdaptive = function () {
 /*Скрипт, который в футере ставит левій блок после правого,
 такова идея дизайнера*/
 var mainFooterAdaptive = function () {
-    if(isDisplayTablet()) {
+    if(isDisplayTablet() || isDisplayMobile()) {
        $('footer .left-block').insertAfter('footer .right-block').addClass('footerBottom');
        var footerCorrection = $("footer .footerBottom p, footer .footerBottom a.developers");
         footerCorrection.wrapAll('<div class="bottom-right-column">')
